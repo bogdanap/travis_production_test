@@ -1,12 +1,27 @@
-language: cpp
 
-dist: trusty
 
-sudo: false
+dist: precise
+sudo: required
+
+matrix:
+    include:
+        - language: java
+        - language: scala
+        - language: php
+        - language: python
+        - language: perl
+        - language: go
+        - language: ruby
+        - language: cpp
+        - language: haskell
+        - language: erlang
+        
 
 install: true
 
-script: ls -la ~
+script: "dpkg --get-selections"
+
+
 
 # env:
 #   - DIST=precise STACK=EC2
@@ -29,16 +44,16 @@ script: ls -la ~
 # script:
 #   - true
 
-deploy:
-  provider: releases
-  edge:
-    branch: ha-debug-releases-api_key
-  on:
-    tags: false
-  api_key: "$api_key"
+#deploy:
+ # provider: releases
+ # edge:
+ #   branch: ha-debug-releases-api_key
+ # on:
+ #   tags: false
+ # api_key: "$api_key"
 
-notifications:
-  email: false
+#notifications:
+#  email: false
   # webhooks: http://requestb.in/16le4he1
 
   #  slack:
