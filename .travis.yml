@@ -2,6 +2,7 @@
 
 dist: precise
 sudo: required
+group: edge
 
 matrix:
     include:
