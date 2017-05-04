@@ -2,20 +2,12 @@
 
 dist: precise
 sudo: required
-group: edge
+group: deprecated-2017Q1
 
 matrix:
     include:
-        - language: java
-        - language: scala
-        - language: php
-        - language: python
-        - language: perl
-        - language: go
-        - language: ruby
-        - language: cpp
-        - language: haskell
-        - language: erlang
+        - language: nodejs
+        
         
 
 install: true
