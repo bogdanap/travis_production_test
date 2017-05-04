@@ -2,7 +2,7 @@
 
 dist: precise
 sudo: required
-group: stable
+group: deprecate-2017Q1
 
 matrix:
     include:
