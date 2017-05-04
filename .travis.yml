@@ -6,7 +6,7 @@ group: stable
 
 matrix:
     include:
-        - language: nodejs
+        - language: node_js
         
         
 
