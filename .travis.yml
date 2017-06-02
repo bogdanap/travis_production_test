@@ -4,10 +4,10 @@ matrix:
   include:
     - sudo: false
       dist: trusty
-      language: generic
+      language: __connie__
     - sudo: required
       dist: trusty
-      language: generic
+      language: __connie__
 
 group: stable
 
