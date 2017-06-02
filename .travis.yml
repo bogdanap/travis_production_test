@@ -3,8 +3,12 @@ dist: trusty
 
 matrix:
   include:
-    - env: DIST=trusty STACK=GCE 
-    - env: DIST=trusty STACK=EC2
+    - sudo: false
+      dist: trusty
+      env: SUDO=false DIST=trusty
+    - sudo: required
+      dist: trusty
+      env: SUDO=required DIST=trusty
 
 
 group: stable
