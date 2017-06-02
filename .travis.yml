@@ -1,21 +1,12 @@
-language: php
-php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - 7.0
-  - 7.1
-  - hhvm
+language: __connie__
 
-env: COVERAGE=0
 
 matrix:
   include:
-    - php: 5.6
-      env: COVERAGE=1
+    - env: DIST=trusty STACK=GCE 
+      env: DIST=trusty STACK=EC2
 
-dist: trusty
-sudo: required
+
 group: stable
 
 #matrix:
