@@ -1,4 +1,3 @@
-language: __connie__
 dist: trusty
 
 matrix:
@@ -6,9 +5,11 @@ matrix:
     - sudo: false
       dist: trusty
       env: SUDO=false DIST=trusty
+      language: __connie__
     - sudo: required
       dist: trusty
       env: SUDO=required DIST=trusty
+      language: __connie__
 
 
 group: stable
