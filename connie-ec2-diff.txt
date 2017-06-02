@@ -1,17 +1,17 @@
 travis_fold:start:worker_info
 [0K[33;1mWorker information[0m
-hostname: i-0da0329-production-2-worker-org-ec2.travisci.net:7c742bb0-02da-48e5-ac09-81939ddf83ab
+hostname: i-0713321-production-2-worker-org-ec2.travisci.net:72c216bc-653e-458a-9a2c-1e4c1d263531
 version: v2.8.2 https://github.com/travis-ci/worker/tree/8af6d454c3a7790f73c7af98ed33b0b33292478f
-instance: 1207390:travis:default
-startup: 855.142761ms
+instance: 3944bc5:travis:default
+startup: 638.436335ms
 travis_fold:end:worker_info
 [0Ktravis_fold:start:system_info
 [0K[33;1mBuild system information[0m
 Build language: __connie__
-Build group: stable
+Build group: edge
 Build dist: trusty
-Build id: 238875083
-Job id: 238875084
+Build id: 238879511
+Job id: 238879512
 travis-build version: 53940dac2
 [34m[1mBuild image provisioning date and time[0m
 Thu Nov 10 03:26:46 UTC 2016
@@ -79,22 +79,20 @@ $ sudo rm -f /usr/lib/jvm/java-8-oracle-amd64
 Reload jdk_switcher
 $ source $HOME/.jdk_switcher_rc
 travis_fold:start:git.checkout
-[0Ktravis_time:start:1b6e2268
+[0Ktravis_time:start:051a7c40
 [0K$ git clone --depth=50 --branch=cha-gce-image-diff https://github.com/Lyoness/travis_production_test.git Lyoness/travis_production_test
 Cloning into 'Lyoness/travis_production_test'...
-remote: Total 171 (delta 92), reused 151 (delta 77), pack-reused 0[K
-Checking connectivity... done.
 
-travis_time:end:1b6e2268:start=1496430366677681315,finish=1496430367195772048,duration=518090733
+travis_time:end:051a7c40:start=1496431219029754367,finish=1496431219489577898,duration=459823531
 [0K$ cd Lyoness/travis_production_test
-$ git checkout -qf a15d92d9931d7bf8244fed398a4c5dc417b43e7c
+$ git checkout -qf abcb813a882b15feab1436b6506a3f6435756cc8
 travis_fold:end:git.checkout
 [0Ktravis_fold:start:rvm
-[0Ktravis_time:start:045abedb
+[0Ktravis_time:start:1c3c9b02
 [0K$ rvm use default
 [32mUsing /home/travis/.rvm/gems/ruby-2.3.1[0m
 
-travis_time:end:045abedb:start=1496430372819798944,finish=1496430373517476463,duration=697677519
+travis_time:end:1c3c9b02:start=1496431225015835300,finish=1496431225428603381,duration=412768081
 [0Ktravis_fold:end:rvm
 [0K$ export BUNDLE_GEMFILE=$PWD/Gemfile
 $ ruby --version
@@ -106,12 +104,12 @@ Bundler version 1.13.6
 $ gem --version
 2.5.1
 travis_fold:start:install
-[0Ktravis_time:start:0076c650
+[0Ktravis_time:start:18b06444
 [0K$ true
 
-travis_time:end:0076c650:start=1496430374421931384,finish=1496430374438623157,duration=16691773
+travis_time:end:18b06444:start=1496431226079132289,finish=1496431226083541795,duration=4409506
 [0Ktravis_fold:end:install
-[0Ktravis_time:start:00e6d248
+[0Ktravis_time:start:1f7ebc9c
 [0K$ dpkg --get-selections
 acl						install
 adduser						install
@@ -1188,7 +1186,7 @@ zip						install
 zlib1g:amd64					install
 zlib1g-dev:amd64				install
 
-travis_time:end:00e6d248:start=1496430374462285909,finish=1496430374623449120,duration=161163211
+travis_time:end:1f7ebc9c:start=1496431226089452605,finish=1496431226119027112,duration=29574507
 [0K
 [32;1mThe command "dpkg --get-selections" exited with 0.[0m
 
