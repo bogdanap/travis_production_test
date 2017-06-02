@@ -4,13 +4,10 @@ matrix:
   include:
     - sudo: false
       dist: trusty
-      env: SUDO=false DIST=trusty
-      language: __connie__
+      language: node_js
     - sudo: required
       dist: trusty
-      env: SUDO=required DIST=trusty
-      language: __connie__
-
+      language: node_js
 
 group: stable
 
