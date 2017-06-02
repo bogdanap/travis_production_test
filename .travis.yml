@@ -9,7 +9,7 @@ matrix:
       dist: trusty
       language: __connie__
 
-group: stable
+group: edge
 
 #matrix:
     #include:
