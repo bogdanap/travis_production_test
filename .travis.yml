@@ -4,7 +4,7 @@ language: __connie__
 matrix:
   include:
     - env: DIST=trusty STACK=GCE 
-      env: DIST=trusty STACK=EC2
+    - env: DIST=trusty STACK=EC2
 
 
 group: stable
