@@ -17,18 +17,18 @@
 #language___cookiecat__: 'true'
 
 
-
+language: android
 
 dist: trusty
 
-matrix:
-  include:
-    - sudo: false
-      dist: precise
-      language: android
-    - sudo: required
-      dist: trusty
-      language: __cookiecat__
+#matrix:
+ # include:
+  #  - sudo: false
+   #   dist: precise
+    #  language: android
+    #- sudo: required
+     # dist: trusty
+      #language: __cookiecat__
 
 group: dev
 
