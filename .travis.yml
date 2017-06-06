@@ -17,7 +17,8 @@
 #language___cookiecat__: 'true'
 
 
-language: __cookiecat__
+language: android
+sudo: required
 
 dist: trusty
 
