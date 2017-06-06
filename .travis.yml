@@ -23,9 +23,9 @@ dist: trusty
 
 matrix:
   include:
-  #  - sudo: false
-  #    dist: trusty
-   #   language: __cookiecat__
+    - sudo: false
+      dist: precise
+      language: android
     - sudo: required
       dist: trusty
       language: __cookiecat__
