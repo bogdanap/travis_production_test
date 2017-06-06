@@ -4,8 +4,7 @@ dist: trusty
 
 matrix:
   include:
-    - sudo: false
-      dist: trusty
+    - dist: trusty
       language: __connie__
     - sudo: required
       dist: trusty
