@@ -1,35 +1,15 @@
-#from https://admin.travis-ci.com/images/travis-ci-cookiecat-trusty-1496411882?infra=gce
-#os: ubuntu
-#dist: trusty
-#group: dev
-#group_dev: 'true'
-#feature_jdk: 'true'
-#feature_basic: 'true'
-#feature_docker: 'true'
-#language_android: 'true'
-#packer_chef_time: 20170602T140001Z
-#packer_build_name: googlecompute
-#packer_builder_type: googlecompute
-#packer_templates_sha: 13d454b
-#travis_cookbooks_sha: 42ed1bf
-#feature_disabled-ipv6: 'true'
-#feature_docker-compose: 'true'
-#language___cookiecat__: 'true'
 
-
-language: __connie__
-sudo: required
 
 dist: trusty
 
-#matrix:
- # include:
-  #  - sudo: false
-   #   dist: precise
-    #  language: android
-    #- sudo: required
-     # dist: trusty
-      #language: __cookiecat__
+matrix:
+  include:
+    - sudo: false
+      dist: trusty
+      language: __connie__
+    - sudo: required
+      dist: trusty
+      language: __connie__
 
 group: stable
 
