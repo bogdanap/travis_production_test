@@ -17,7 +17,7 @@
 #language___cookiecat__: 'true'
 
 
-language: android
+language: __cookiecat__
 
 dist: trusty
 
