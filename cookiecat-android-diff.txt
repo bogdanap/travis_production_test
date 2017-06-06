@@ -1,864 +1,1509 @@
-Worker information
-hostname: i-04a7335-precise-production-2-worker-org-docker.travisci.net:bcbeee47-8c83-41c2-8d85-0ef2c6267d7b
-version: v2.5.0 https://github.com/travis-ci/worker/tree/da3a43228dffc0fcca5a46569ca786b22991979f
-instance: d6ff9b4:travis:android
-startup: 536.04352ms
-Build system information
-Build language: android
+travis_fold:start:worker_info
+[0K[33;1mWorker information[0m
+hostname: production-5-worker-org-b-4-gce:c9821fd3-fb23-4485-8ba9-d5f68849f469
+version: v2.7.0 https://github.com/travis-ci/worker/tree/66fc24311e055643710f4e0567f6888c927d3ab8
+instance: testing-gce-74dde146-f3ae-4727-aab7-3357cea1f16e:travis-ci-cookiecat-trusty-1496748906
+startup: 21.451834781s
+travis_fold:end:worker_info
+[0Ktravis_fold:start:system_info
+[0K[33;1mBuild system information[0m
+Build language: __cookiecat__
 Build group: dev
-Build dist: precise
+Build dist: trusty
 Build id: 239973616
-Job id: 239973617
+Job id: 239973618
 travis-build version: 4183c5148
-Build image provisioning date and time
-Thu Feb  5 15:09:33 UTC 2015
-Operating System Details
+[34m[1mBuild image provisioning date and time[0m
+Tue Jun  6 11:54:33 UTC 2017
+[34m[1mOperating System Details[0m
 Distributor ID:	Ubuntu
-Description:	Ubuntu 12.04.5 LTS
-Release:	12.04
-Codename:	precise
-Linux Version
-3.13.0-29-generic
-Cookbooks Version
-a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
-GCC version
-gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
-Copyright (C) 2011 Free Software Foundation, Inc.
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mLinux Version[0m
+4.4.0-71-generic
+[34m[1mCookbooks Version[0m
+42ed1bf https://github.com/travis-ci/travis-cookbooks/tree/42ed1bf
+[34m[1mgit version[0m
+git version 2.13.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-LLVM version
-clang version 3.4 (tags/RELEASE_34/final)
+[34m[1mdocker version[0m
+Client:
+ Version:      17.03.1-ce
+ API version:  1.27
+ Go version:   go1.7.5
+ Git commit:   c6d412e
+ Built:        Mon Mar 27 17:10:36 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.03.1-ce
+ API version:  1.27 (minimum version 1.12)
+ Go version:   go1.7.5
+ Git commit:   c6d412e
+ Built:        Mon Mar 27 17:10:36 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 3.5.0 (tags/RELEASE_350/final)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
-Pre-installed Ruby versions
-ruby-1.9.3-p551
-Pre-installed Node.js versions
-v0.10.36
-Pre-installed Go versions
-1.4.1
-Redis version
-redis-server 2.8.19
-riak version
-2.0.2
-MongoDB version
-MongoDB 2.4.12
-CouchDB version
-couchdb 1.6.1
-Neo4j version
-1.9.4
-RabbitMQ Version
-3.4.3
-ElasticSearch version
-1.4.0
-Installed Sphinx versions
-2.0.10
-2.1.9
-2.2.6
-Default Sphinx version
-2.2.6
-Installed Firefox version
-firefox 31.0esr
-PhantomJS version
-1.9.8
-ant -version
-Apache Ant(TM) version 1.8.2 compiled on December 3 2011
-mvn -version
-Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
-Maven home: /usr/local/maven
-Java version: 1.7.0_76, vendor: Oracle Corporation
-Java home: /usr/lib/jvm/java-7-oracle/jre
-Default locale: en_US, platform encoding: ANSI_X3.4-1968
-OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.5
+[34m[1mshfmt version[0m
+v1.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
 
-$ export DEBIAN_FRONTEND=noninteractive
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following extra packages will be installed:
-  libc-bin libc-dev-bin libc6:i386 libc6-dev libc6-i386
-Suggested packages:
-  glibc-doc glibc-doc:i386 locales:i386
-The following packages will be upgraded:
-  libc-bin libc-dev-bin libc6 libc6:i386 libc6-dev libc6-i386
-6 upgraded, 0 newly installed, 0 to remove and 278 not upgraded.
-Need to get 16.8 MB of archives.
-After this operation, 26.6 kB of additional disk space will be used.
-Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-bin amd64 2.15-0ubuntu10.18 [1,178 kB]
-Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-i386 amd64 2.15-0ubuntu10.18 [3,989 kB]
-Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-dev-bin amd64 2.15-0ubuntu10.18 [84.5 kB]
-Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-dev amd64 2.15-0ubuntu10.18 [2,948 kB]
-Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6 i386 2.15-0ubuntu10.18 [3,926 kB]
-Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6 amd64 2.15-0ubuntu10.18 [4,646 kB]
-Fetched 16.8 MB in 0s (37.0 MB/s)
-Preconfiguring packages ...
-(Reading database ... 72899 files and directories currently installed.)
-Preparing to replace libc-bin 2.15-0ubuntu10.10 (using .../libc-bin_2.15-0ubuntu10.18_amd64.deb) ...
-Unpacking replacement libc-bin ...
-Processing triggers for man-db ...
-Setting up libc-bin (2.15-0ubuntu10.18) ...
-(Reading database ... 72898 files and directories currently installed.)
-Preparing to replace libc6-i386 2.15-0ubuntu10.10 (using .../libc6-i386_2.15-0ubuntu10.18_amd64.deb) ...
-Unpacking replacement libc6-i386 ...
-Replaced by files in installed package libc6:i386 ...
-Preparing to replace libc-dev-bin 2.15-0ubuntu10.10 (using .../libc-dev-bin_2.15-0ubuntu10.18_amd64.deb) ...
-Unpacking replacement libc-dev-bin ...
-Preparing to replace libc6-dev 2.15-0ubuntu10.10 (using .../libc6-dev_2.15-0ubuntu10.18_amd64.deb) ...
-Unpacking replacement libc6-dev ...
-Preparing to replace libc6 2.15-0ubuntu10.10 (using .../libc6_2.15-0ubuntu10.18_amd64.deb) ...
-De-configuring libc6:i386 ...
-Unpacking replacement libc6 ...
-Preparing to replace libc6:i386 2.15-0ubuntu10.10 (using .../libc6_2.15-0ubuntu10.18_i386.deb) ...
-Unpacking replacement libc6:i386 ...
-Processing triggers for man-db ...
-Setting up libc6 (2.15-0ubuntu10.18) ...
-Setting up libc6:i386 (2.15-0ubuntu10.18) ...
-Setting up libc6-i386 (2.15-0ubuntu10.18) ...
-Setting up libc-dev-bin (2.15-0ubuntu10.18) ...
-Setting up libc6-dev (2.15-0ubuntu10.18) ...
-Processing triggers for libc-bin ...
-ldconfig deferred processing now taking place
-$ sudo apt-get install libssl1.0.0
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following extra packages will be installed:
-  libssl-dev
-The following packages will be upgraded:
-  libssl-dev libssl1.0.0
-2 upgraded, 0 newly installed, 0 to remove and 276 not upgraded.
-Need to get 2,634 kB of archives.
-After this operation, 29.7 kB of additional disk space will be used.
-Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-dev amd64 1.0.1-4ubuntu5.39 [1,580 kB]
-Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl1.0.0 amd64 1.0.1-4ubuntu5.39 [1,054 kB]
-Fetched 2,634 kB in 0s (15.0 MB/s)
-Preconfiguring packages ...
-(Reading database ... 72898 files and directories currently installed.)
-Preparing to replace libssl-dev 1.0.1-4ubuntu5.21 (using .../libssl-dev_1.0.1-4ubuntu5.39_amd64.deb) ...
-Unpacking replacement libssl-dev ...
-Preparing to replace libssl1.0.0 1.0.1-4ubuntu5.21 (using .../libssl1.0.0_1.0.1-4ubuntu5.39_amd64.deb) ...
-Unpacking replacement libssl1.0.0 ...
-Setting up libssl1.0.0 (1.0.1-4ubuntu5.39) ...
-Setting up libssl-dev (1.0.1-4ubuntu5.39) ...
-Processing triggers for libc-bin ...
-ldconfig deferred processing now taking place
-$ git clone --depth=50 --branch=cha-gce-image-diff https://github.com/Lyoness/travis_production_test.git Lyoness/travis_production_test
-Cloning into 'Lyoness/travis_production_test'...
-remote: Counting objects: 176, done.
-remote: Compressing objects: 100% (94/94), done.
-remote: Total 176 (delta 93), reused 150 (delta 72), pack-reused 0
-Receiving objects: 100% (176/176), 41.22 KiB | 0 bytes/s, done.
-Resolving deltas: 100% (93/93), done.
-Checking connectivity... done.
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
 
-$ cd Lyoness/travis_production_test
-$ git checkout -qf 4304fe372bb9d6319af5c070aaaaf081fe11e205
-No build-tools version is specified in android.components. Consider adding one of:
-build-tools-23.0.1
-build-tools-23.0.0
-build-tools-22.0.1
-build-tools-22.0.0
-build-tools-21.1.2
-build-tools-21.1.1
-build-tools-21.1.0
-build-tools-21.0.2
-build-tools-21.0.1
-build-tools-21.0.0
-build-tools-20.0.0
-build-tools-19.1.0
-build-tools-19.0.3
-build-tools-19.0.2
-build-tools-19.0.1
-build-tools-19.0.0
-build-tools-18.1.1
-build-tools-18.1.0
-build-tools-18.0.1
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.2.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-toolbelt/3.43.16 (x86_64-linux) ruby/2.4.0
+heroku-cli/5.11.2-77a7396 (linux-amd64) go1.7.5
+You have no installed plugins.
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-05-26 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.1.3)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.5.55, for debian-linux-gnu (x86_64) using readline 6.3
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2j  26 Sep 2016
+[34m[1mpacker version[0m
+Packer v0.10.1
+
+Your version of Packer is out of date! The latest version
+is 1.0.0. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.3.17
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 20 2015, 12:51:30 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.25/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.0.0
+[34m[1mnvm version[0m
+0.33.0
+[34m[1mrvm version[0m
+rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+[34m[1mdefault ruby version[0m
+ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+[34m[1mAndroid SDK Tools Version[0m
+25.2.3
+[34m[1mList of Android SDK components that can be specified in .travis.yml[0m
+addon-google_apis-google-10
+addon-google_apis-google-11
+addon-google_apis-google-12
+addon-google_apis-google-13
+addon-google_apis-google-14
+addon-google_apis-google-15
+addon-google_apis-google-16
+addon-google_apis-google-17
+addon-google_apis-google-18
+addon-google_apis-google-19
+addon-google_apis-google-21
+addon-google_apis-google-22
+addon-google_apis-google-23
+addon-google_apis-google-24
+addon-google_apis-google-3
+addon-google_apis-google-4
+addon-google_apis-google-5
+addon-google_apis-google-6
+addon-google_apis-google-7
+addon-google_apis-google-8
+addon-google_apis-google-9
+addon-google_gdk-google-19
+addon-google_tv_addon-google-12
+addon-google_tv_addon-google-13
+android-10
+android-11
+android-12
+android-13
+android-14
+android-15
+android-16
+android-17
+android-18
+android-19
+android-2
+android-20
+android-21
+android-22
+android-23
+android-24
+android-25
+android-3
+android-4
+android-5
+android-6
+android-7
+android-8
+android-9
 build-tools-17.0.0
-The following versions are pre-installed:
+build-tools-18.0.1
+build-tools-18.1.0
+build-tools-18.1.1
+build-tools-19.0.0
+build-tools-19.0.1
+build-tools-19.0.2
+build-tools-19.0.3
+build-tools-19.1.0
+build-tools-20.0.0
+build-tools-21.0.0
+build-tools-21.0.1
+build-tools-21.0.2
+build-tools-21.1.0
+build-tools-21.1.1
 build-tools-21.1.2
+build-tools-22.0.0
+build-tools-22.0.1
+build-tools-23.0.0
+build-tools-23.0.1
+build-tools-23.0.2
+build-tools-23.0.3
+build-tools-24.0.0
+build-tools-24.0.1
+build-tools-24.0.2
+build-tools-24.0.3
+build-tools-25.0.0
+build-tools-25.0.1
+build-tools-25.0.2
+build-tools-25.0.3
+build-tools-26.0.0-preview
+doc-24
+extra-android-m2repository
+extra-google-admob_ads_sdk
+extra-google-analytics_sdk_v2
+extra-google-auto
+extra-google-gcm
+extra-google-google_play_services
+extra-google-google_play_services_froyo
+extra-google-instantapps
+extra-google-m2repository
+extra-google-market_apk_expansion
+extra-google-market_licensing
+extra-google-play_billing
+extra-google-simulators
+extra-google-webdriver
+platform-tools
+platform-tools-preview
+source-14
+source-15
+source-16
+source-17
+source-18
+source-19
+source-20
+source-21
+source-22
+source-23
+source-24
+source-25
+sys-img-arm64-v8a-android-24
+sys-img-arm64-v8a-google_apis-24
+sys-img-arm64-v8a-google_apis-25
+sys-img-armeabi-v7a-android-10
+sys-img-armeabi-v7a-android-14
+sys-img-armeabi-v7a-android-15
+sys-img-armeabi-v7a-android-16
+sys-img-armeabi-v7a-android-17
+sys-img-armeabi-v7a-android-18
+sys-img-armeabi-v7a-android-19
+sys-img-armeabi-v7a-android-21
+sys-img-armeabi-v7a-android-22
+sys-img-armeabi-v7a-android-24
+sys-img-armeabi-v7a-android-tv-21
+sys-img-armeabi-v7a-android-tv-22
+sys-img-armeabi-v7a-android-tv-23
+sys-img-armeabi-v7a-android-wear-23
+sys-img-armeabi-v7a-android-wear-25
+sys-img-armeabi-v7a-google_apis-10
+sys-img-armeabi-v7a-google_apis-15
+sys-img-armeabi-v7a-google_apis-16
+sys-img-armeabi-v7a-google_apis-17
+sys-img-armeabi-v7a-google_apis-18
+sys-img-armeabi-v7a-google_apis-19
+sys-img-armeabi-v7a-google_apis-21
+sys-img-armeabi-v7a-google_apis-22
+sys-img-armeabi-v7a-google_apis-23
+sys-img-armeabi-v7a-google_apis-24
+sys-img-armeabi-v7a-google_apis-25
+sys-img-mips-android-15
+sys-img-mips-android-16
+sys-img-mips-android-17
+sys-img-x86-android-10
+sys-img-x86-android-15
+sys-img-x86-android-16
+sys-img-x86-android-17
+sys-img-x86-android-18
+sys-img-x86-android-19
+sys-img-x86-android-21
+sys-img-x86-android-22
+sys-img-x86-android-23
+sys-img-x86-android-24
+sys-img-x86-android-tv-21
+sys-img-x86-android-tv-22
+sys-img-x86-android-tv-23
+sys-img-x86-android-tv-24
+sys-img-x86-android-tv-25
+sys-img-x86-android-wear-23
+sys-img-x86-android-wear-25
+sys-img-x86-google_apis-10
+sys-img-x86-google_apis-15
+sys-img-x86-google_apis-16
+sys-img-x86-google_apis-17
+sys-img-x86-google_apis-18
+sys-img-x86-google_apis-19
+sys-img-x86-google_apis-21
+sys-img-x86-google_apis-22
+sys-img-x86-google_apis-23
+sys-img-x86-google_apis-24
+sys-img-x86-google_apis-25
+sys-img-x86-google_apis_playstore-24
+sys-img-x86_64-android-21
+sys-img-x86_64-android-22
+sys-img-x86_64-android-23
+sys-img-x86_64-android-24
+sys-img-x86_64-google_apis-21
+sys-img-x86_64-google_apis-22
+sys-img-x86_64-google_apis-23
+sys-img-x86_64-google_apis-24
+sys-img-x86_64-google_apis-25
+tools
+[34m[1mwhich android && echo -e "\033[33;1mSee http://docs.travis-ci.com/user/languages/android/#How-to-install-Android-SDK-components\033[0m"[0m
+/usr/local/android-sdk/tools/android
+[33;1mSee http://docs.travis-ci.com/user/languages/android/#How-to-install-Android-SDK-components[0m
+travis_fold:end:system_info
+[0K
+travis_fold:start:git.checkout
+[0Ktravis_time:start:1c7c9af2
+[0K$ git clone --depth=50 --branch=cha-gce-image-diff https://github.com/Lyoness/travis_production_test.git Lyoness/travis_production_test
+Cloning into 'Lyoness/travis_production_test'...
+remote: Counting objects: 176, done.[K
+remote: Compressing objects:   1% (1/94)   [K
+remote: Compressing objects:   2% (2/94)   [K
+remote: Compressing objects:   3% (3/94)   [K
+remote: Compressing objects:   4% (4/94)   [K
+remote: Compressing objects:   5% (5/94)   [K
+remote: Compressing objects:   6% (6/94)   [K
+remote: Compressing objects:   7% (7/94)   [K
+remote: Compressing objects:   8% (8/94)   [K
+remote: Compressing objects:   9% (9/94)   [K
+remote: Compressing objects:  10% (10/94)   [K
+remote: Compressing objects:  11% (11/94)   [K
+remote: Compressing objects:  12% (12/94)   [K
+remote: Compressing objects:  13% (13/94)   [K
+remote: Compressing objects:  14% (14/94)   [K
+remote: Compressing objects:  15% (15/94)   [K
+remote: Compressing objects:  17% (16/94)   [K
+remote: Compressing objects:  18% (17/94)   [K
+remote: Compressing objects:  19% (18/94)   [K
+remote: Compressing objects:  20% (19/94)   [K
+remote: Compressing objects:  21% (20/94)   [K
+remote: Compressing objects:  22% (21/94)   [K
+remote: Compressing objects:  23% (22/94)   [K
+remote: Compressing objects:  24% (23/94)   [K
+remote: Compressing objects:  25% (24/94)   [K
+remote: Compressing objects:  26% (25/94)   [K
+remote: Compressing objects:  27% (26/94)   [K
+remote: Compressing objects:  28% (27/94)   [K
+remote: Compressing objects:  29% (28/94)   [K
+remote: Compressing objects:  30% (29/94)   [K
+remote: Compressing objects:  31% (30/94)   [K
+remote: Compressing objects:  32% (31/94)   [K
+remote: Compressing objects:  34% (32/94)   [K
+remote: Compressing objects:  35% (33/94)   [K
+remote: Compressing objects:  36% (34/94)   [K
+remote: Compressing objects:  37% (35/94)   [K
+remote: Compressing objects:  38% (36/94)   [K
+remote: Compressing objects:  39% (37/94)   [K
+remote: Compressing objects:  40% (38/94)   [K
+remote: Compressing objects:  41% (39/94)   [K
+remote: Compressing objects:  42% (40/94)   [K
+remote: Compressing objects:  43% (41/94)   [K
+remote: Compressing objects:  44% (42/94)   [K
+remote: Compressing objects:  45% (43/94)   [K
+remote: Compressing objects:  46% (44/94)   [K
+remote: Compressing objects:  47% (45/94)   [K
+remote: Compressing objects:  48% (46/94)   [K
+remote: Compressing objects:  50% (47/94)   [K
+remote: Compressing objects:  51% (48/94)   [K
+remote: Compressing objects:  52% (49/94)   [K
+remote: Compressing objects:  53% (50/94)   [K
+remote: Compressing objects:  54% (51/94)   [K
+remote: Compressing objects:  55% (52/94)   [K
+remote: Compressing objects:  56% (53/94)   [K
+remote: Compressing objects:  57% (54/94)   [K
+remote: Compressing objects:  58% (55/94)   [K
+remote: Compressing objects:  59% (56/94)   [K
+remote: Compressing objects:  60% (57/94)   [K
+remote: Compressing objects:  61% (58/94)   [K
+remote: Compressing objects:  62% (59/94)   [K
+remote: Compressing objects:  63% (60/94)   [K
+remote: Compressing objects:  64% (61/94)   [K
+remote: Compressing objects:  65% (62/94)   [K
+remote: Compressing objects:  67% (63/94)   [K
+remote: Compressing objects:  68% (64/94)   [K
+remote: Compressing objects:  69% (65/94)   [K
+remote: Compressing objects:  70% (66/94)   [K
+remote: Compressing objects:  71% (67/94)   [K
+remote: Compressing objects:  72% (68/94)   [K
+remote: Compressing objects:  73% (69/94)   [K
+remote: Compressing objects:  74% (70/94)   [K
+remote: Compressing objects:  75% (71/94)   [K
+remote: Compressing objects:  76% (72/94)   [K
+remote: Compressing objects:  77% (73/94)   [K
+remote: Compressing objects:  78% (74/94)   [K
+remote: Compressing objects:  79% (75/94)   [K
+remote: Compressing objects:  80% (76/94)   [K
+remote: Compressing objects:  81% (77/94)   [K
+remote: Compressing objects:  82% (78/94)   [K
+remote: Compressing objects:  84% (79/94)   [K
+remote: Compressing objects:  85% (80/94)   [K
+remote: Compressing objects:  86% (81/94)   [K
+remote: Compressing objects:  87% (82/94)   [K
+remote: Compressing objects:  88% (83/94)   [K
+remote: Compressing objects:  89% (84/94)   [K
+remote: Compressing objects:  90% (85/94)   [K
+remote: Compressing objects:  91% (86/94)   [K
+remote: Compressing objects:  92% (87/94)   [K
+remote: Compressing objects:  93% (88/94)   [K
+remote: Compressing objects:  94% (89/94)   [K
+remote: Compressing objects:  95% (90/94)   [K
+remote: Compressing objects:  96% (91/94)   [K
+remote: Compressing objects:  97% (92/94)   [K
+remote: Compressing objects:  98% (93/94)   [K
+remote: Compressing objects: 100% (94/94)   [K
+remote: Compressing objects: 100% (94/94), done.[K
+Receiving objects:   0% (1/176)   
+Receiving objects:   1% (2/176)   
+Receiving objects:   2% (4/176)   
+Receiving objects:   3% (6/176)   
+Receiving objects:   4% (8/176)   
+Receiving objects:   5% (9/176)   
+Receiving objects:   6% (11/176)   
+Receiving objects:   7% (13/176)   
+Receiving objects:   8% (15/176)   
+Receiving objects:   9% (16/176)   
+Receiving objects:  10% (18/176)   
+Receiving objects:  11% (20/176)   
+Receiving objects:  12% (22/176)   
+Receiving objects:  13% (23/176)   
+Receiving objects:  14% (25/176)   
+Receiving objects:  15% (27/176)   
+Receiving objects:  16% (29/176)   
+Receiving objects:  17% (30/176)   
+Receiving objects:  18% (32/176)   
+Receiving objects:  19% (34/176)   
+Receiving objects:  20% (36/176)   
+Receiving objects:  21% (37/176)   
+Receiving objects:  22% (39/176)   
+Receiving objects:  23% (41/176)   
+Receiving objects:  24% (43/176)   
+Receiving objects:  25% (44/176)   
+Receiving objects:  26% (46/176)   
+Receiving objects:  27% (48/176)   
+Receiving objects:  28% (50/176)   
+Receiving objects:  29% (52/176)   
+Receiving objects:  30% (53/176)   
+Receiving objects:  31% (55/176)   
+Receiving objects:  32% (57/176)   
+Receiving objects:  33% (59/176)   
+Receiving objects:  34% (60/176)   
+Receiving objects:  35% (62/176)   
+Receiving objects:  36% (64/176)   
+Receiving objects:  37% (66/176)   
+Receiving objects:  38% (67/176)   
+Receiving objects:  39% (69/176)   
+Receiving objects:  40% (71/176)   
+Receiving objects:  41% (73/176)   
+Receiving objects:  42% (74/176)   
+Receiving objects:  43% (76/176)   
+Receiving objects:  44% (78/176)   
+Receiving objects:  45% (80/176)   
+Receiving objects:  46% (81/176)   
+Receiving objects:  47% (83/176)   
+Receiving objects:  48% (85/176)   
+Receiving objects:  49% (87/176)   
+Receiving objects:  50% (88/176)   
+Receiving objects:  51% (90/176)   
+Receiving objects:  52% (92/176)   
+Receiving objects:  53% (94/176)   
+Receiving objects:  54% (96/176)   
+Receiving objects:  55% (97/176)   
+Receiving objects:  56% (99/176)   
+Receiving objects:  57% (101/176)   
+Receiving objects:  58% (103/176)   
+Receiving objects:  59% (104/176)   
+Receiving objects:  60% (106/176)   
+Receiving objects:  61% (108/176)   
+Receiving objects:  62% (110/176)   
+Receiving objects:  63% (111/176)   
+Receiving objects:  64% (113/176)   
+Receiving objects:  65% (115/176)   
+Receiving objects:  66% (117/176)   
+Receiving objects:  67% (118/176)   
+Receiving objects:  68% (120/176)   
+Receiving objects:  69% (122/176)   
+Receiving objects:  70% (124/176)   
+Receiving objects:  71% (125/176)   
+Receiving objects:  72% (127/176)   
+Receiving objects:  73% (129/176)   
+Receiving objects:  74% (131/176)   
+Receiving objects:  75% (132/176)   
+Receiving objects:  76% (134/176)   
+Receiving objects:  77% (136/176)   
+Receiving objects:  78% (138/176)   
+Receiving objects:  79% (140/176)   
+Receiving objects:  80% (141/176)   
+Receiving objects:  81% (143/176)   
+Receiving objects:  82% (145/176)   
+Receiving objects:  83% (147/176)   
+Receiving objects:  84% (148/176)   
+Receiving objects:  85% (150/176)   
+Receiving objects:  86% (152/176)   
+Receiving objects:  87% (154/176)   
+Receiving objects:  88% (155/176)   
+Receiving objects:  89% (157/176)   
+remote: Total 176 (delta 93), reused 150 (delta 72), pack-reused 0[K
+Receiving objects:  90% (159/176)   
+Receiving objects:  91% (161/176)   
+Receiving objects:  92% (162/176)   
+Receiving objects:  93% (164/176)   
+Receiving objects:  94% (166/176)   
+Receiving objects:  95% (168/176)   
+Receiving objects:  96% (169/176)   
+Receiving objects:  97% (171/176)   
+Receiving objects:  98% (173/176)   
+Receiving objects:  99% (175/176)   
+Receiving objects: 100% (176/176)   
+Receiving objects: 100% (176/176), 41.22 KiB | 0 bytes/s, done.
+Resolving deltas:   0% (0/93)   
+Resolving deltas:   1% (1/93)   
+Resolving deltas:  96% (90/93)   
+Resolving deltas:  97% (91/93)   
+Resolving deltas: 100% (93/93)   
+Resolving deltas: 100% (93/93), done.
 
-$ java -Xmx32m -version
-java version "1.7.0_76"
-Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
-Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
-$ javac -J-Xmx32m -version
-javac 1.7.0_76
-$ true
+travis_time:end:1c7c9af2:start=1496757243326646893,finish=1496757244015213359,duration=688566466
+[0K$ cd Lyoness/travis_production_test
+$ git checkout -qf 4304fe372bb9d6319af5c070aaaaf081fe11e205
+travis_fold:end:git.checkout
+[0Ktravis_fold:start:rvm
+[0Ktravis_time:start:25fd627a
+[0K$ rvm use default
+[32mUsing /home/travis/.rvm/gems/ruby-2.4.0[0m
 
-$ dpkg --get-selections
+travis_time:end:25fd627a:start=1496757244034185505,finish=1496757244616877166,duration=582691661
+[0Ktravis_fold:end:rvm
+[0K$ export BUNDLE_GEMFILE=$PWD/Gemfile
+$ ruby --version
+ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+$ rvm --version
+rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+$ bundle --version
+Bundler version 1.15.1
+$ gem --version
+2.6.8
+travis_fold:start:install
+[0Ktravis_time:start:068fd207
+[0K$ true
+
+travis_time:end:068fd207:start=1496757245221305001,finish=1496757245225343748,duration=4038747
+[0Ktravis_fold:end:install
+[0Ktravis_time:start:06c34c80
+[0K$ dpkg --get-selections
+accountsservice					install
+acpid						install
 adduser						install
-ant						install
-ant-contrib					install
-ant-optional					install
-antlr						install
+apparmor					install
+apport						install
+apport-symptoms					install
 apt						install
 apt-transport-https				install
 apt-utils					install
+apt-xapian-index				install
+aptitude					install
+aptitude-common					install
+at						install
+aufs-tools					install
 autoconf					install
-autogen						install
 automake					install
 autotools-dev					install
 base-files					install
 base-passwd					install
 bash						install
+bash-completion					install
+bc						install
+bind9-host					install
+binfmt-support					install
 binutils					install
 binutils-doc					install
 bison						install
 bsdmainutils					install
 bsdutils					install
+btrfs-tools					install
 build-essential					install
 busybox-initramfs				install
+busybox-static					install
+byobu						install
 bzip2						install
 bzr						install
 ca-certificates					install
 ca-certificates-java				install
 ccache						install
-chef						install
-chromium-browser				install
-chromium-browser-l10n				install
-chromium-codecs-ffmpeg-extra			install
+cgroup-lite					install
+cloud-guest-utils				install
+cloud-init					install
 cmake						install
 cmake-data					install
-cmap-adobe-japan1				install
 comerr-dev					install
-consolekit					install
+command-not-found				install
+command-not-found-data				install
+console-setup					install
 coreutils					install
-couchdb						install
-couchdb-bin					install
-couchdb-common					install
 cpio						install
 cpp						install
-cpp-4.6						install
+cpp-4.8						install
+crda						install
 cron						install
+cryptsetup					install
 cryptsetup-bin					install
 curl						install
 dash						install
 dbus						install
 dbus-x11					install
-dconf-gsettings-backend				install
+dconf-gsettings-backend:amd64			install
 dconf-service					install
 debconf						install
-debconf-utils					install
-debhelper					install
+debconf-i18n					install
 debianutils					install
-dh-apparmor					install
+desktop-file-utils				install
+dh-python					install
 diffutils					install
+dmidecode					install
 dmsetup						install
+dnsutils					install
+docker-ce					install
+dosemu						install
 dosfstools					install
 dpkg						install
 dpkg-dev					install
-e2fslibs					install
+e2fslibs:amd64					install
 e2fsprogs					install
+eatmydata					install
+ed						install
 eject						install
-elasticsearch					install
+emacs						install
 emacs23-bin-common				install
 emacs23-common					install
+emacs23-common-non-dfsg				install
 emacs23-nox					install
+emacs24						install
+emacs24-bin-common				install
+emacs24-common					install
+emacs24-common-non-dfsg				install
 emacsen-common					install
-erlang-asn1					install
-erlang-base-hipe				install
-erlang-corba					install
-erlang-crypto					install
-erlang-dev					install
-erlang-diameter					install
-erlang-docbuilder				install
-erlang-edoc					install
-erlang-erl-docgen				install
-erlang-eunit					install
-erlang-ic					install
-erlang-inets					install
-erlang-inviso					install
-erlang-mnesia					install
-erlang-nox					install
-erlang-odbc					install
-erlang-os-mon					install
-erlang-parsetools				install
-erlang-percept					install
-erlang-public-key				install
-erlang-runtime-tools				install
-erlang-snmp					install
-erlang-ssh					install
-erlang-ssl					install
-erlang-syntax-tools				install
-erlang-tools					install
-erlang-webtool					install
-erlang-xmerl					install
+ethtool						install
 expect						install
-fakeroot					install
 file						install
 findutils					install
-firefox-locale-en				install
 flex						install
 fontconfig					install
 fontconfig-config				install
+fonts-dejavu-core				install
+fonts-dejavu-extra				install
+fonts-ubuntu-font-family-console		install
+friendly-recovery				install
+ftp						install
 fuse						install
 g++						install
-g++-4.6						install
+g++-4.8						install
 gawk						install
 gcc						install
-gcc-4.6						install
-gcc-4.6-base					install
-gcc-4.6-base:i386				install
+gcc-4.8						install
+gcc-4.8-base:amd64				install
+gcc-4.9-base:amd64				install
+gce-compute-image-packages			install
 gconf-service					install
 gconf-service-backend				install
 gconf2						install
 gconf2-common					install
+gdisk						install
+geoip-database					install
 gettext						install
 gettext-base					install
-ghostscript					install
-gir1.2-atk-1.0					install
 gir1.2-freedesktop				install
 gir1.2-gdkpixbuf-2.0				install
 gir1.2-glib-2.0					install
-gir1.2-gtk-2.0					install
-gir1.2-pango-1.0				install
 gir1.2-rsvg-2.0					install
 git						install
+git-core					install
+git-lfs						install
 git-man						install
 gnupg						install
+gnupg-agent					install
+gnupg2						install
+google-cloud-sdk				install
 gpgv						install
 grep						install
 groff-base					install
-groovy						install
-gs-cjk-resource					install
-gsfonts						install
-gsfonts-x11					install
-guile-1.8-libs					install
-gvfs						install
+grub-common					install
+grub-gfxpayload-lists				install
+grub-pc						install
+grub-pc-bin					install
+grub2-common					install
+gvfs:amd64					install
 gvfs-common					install
 gvfs-daemons					install
-gvfs-libs					install
+gvfs-libs:amd64					install
 gzip						install
+haveged						install
 hdparm						install
+heroku						install
+heroku-toolbelt					install
 hicolor-icon-theme				install
 hostname					install
-html2text					install
-icedtea-6-jre-cacao				install
-icedtea-6-jre-jamvm				install
-icedtea-6-plugin				install
-icedtea-7-plugin				install
-icedtea-netx					install
+icedtea-7-plugin:amd64				install
+icedtea-netx:amd64				install
 icedtea-netx-common				install
+icu-devtools					install
 ifupdown					install
 imagemagick					install
 imagemagick-common				install
+info						install
+init-system-helpers				install
 initramfs-tools					install
 initramfs-tools-bin				install
 initscripts					install
 insserv						install
-intltool-debian					install
-iproute						install
+install-info					install
+iproute2					install
 iptables					install
+iputils-ping					install
+iputils-tracepath				install
+irqbalance					install
+isc-dhcp-client					install
+isc-dhcp-common					install
 iso-codes					install
-ivy						install
 java-common					install
-jsvc						install
-junit4						install
+kbd						install
 keyboard-configuration				install
 klibc-utils					install
+kmod						install
 krb5-locales					install
 krb5-multidev					install
+landscape-client				install
+landscape-common				install
 language-pack-en				install
 language-pack-en-base				install
+language-pack-pt				install
+language-pack-pt-base				install
+language-selector-common			install
+laptop-detect					install
+lemon						install
 less						install
+lib32gcc1					install
+lib32stdc++6					install
 lib32z1						install
-libacl1						install
-libalgorithm-diff-perl				install
-libalgorithm-diff-xs-perl			install
-libalgorithm-merge-perl				install
-libantlr-java					install
-libapache-pom-java				install
-libapr1						install
-libaprutil1					install
-libapt-inst1.4					install
-libapt-pkg4.12					install
-libarchive12					install
-libarmadillo2					install
-libasm3-java					install
-libasn1-8-heimdal				install
-libasound2					install
-libasyncns0					install
-libatasmart4					install
+libaccountsservice0:amd64			install
+libacl1:amd64					install
+libapparmor-perl				install
+libapparmor1:amd64				install
+libapr1:amd64					install
+libaprutil1:amd64				install
+libapt-inst1.5:amd64				install
+libapt-inst2.0:amd64				install
+libapt-pkg4.12:amd64				install
+libapt-pkg5.0:amd64				install
+libarchive-extract-perl				install
+libarchive13:amd64				install
+libasan0:amd64					install
+libasn1-8-heimdal:amd64				install
+libasound2:amd64				install
+libasound2-data					install
+libasprintf0c2:amd64				install
+libassuan0:amd64				install
+libasyncns0:amd64				install
+libatasmart4:amd64				install
+libatk-bridge2.0-0:amd64			install
 libatk-wrapper-java				install
-libatk-wrapper-java-jni				install
-libatk1.0-0					install
+libatk-wrapper-java-jni:amd64			install
+libatk1.0-0:amd64				install
 libatk1.0-data					install
-libatk1.0-dev					install
-libattr1					install
-libaudio2					install
-libavahi-client3				install
-libavahi-common-data				install
-libavahi-common3				install
-libavahi-glib1					install
-libbison-dev					install
-libblas3gf					install
-libblkid1					install
-libbonobo2-0					install
+libatomic1:amd64				install
+libatspi2.0-0:amd64				install
+libattr1:amd64					install
+libaudio2:amd64					install
+libaudit-common					install
+libaudit1:amd64					install
+libavahi-client3:amd64				install
+libavahi-common-data:amd64			install
+libavahi-common3:amd64				install
+libavahi-glib1:amd64				install
+libbind9-90					install
+libbison-dev:amd64				install
+libblkid1:amd64					install
+libbonobo2-0:amd64				install
 libbonobo2-common				install
-libbsd0						install
-libbsf-java					install
-libbz2-1.0					install
-libbz2-dev					install
+libboost-iostreams1.54.0:amd64			install
+libbsd0:amd64					install
+libbz2-1.0:amd64				install
+libbz2-dev:amd64				install
 libc-bin					install
+libc-client2007e				install
+libc-client2007e-dev				install
 libc-dev-bin					install
-libc6						install
-libc6:i386					install
-libc6-dev					install
+libc6:amd64					install
+libc6-dev:amd64					install
 libc6-i386					install
-libcairo-gobject2				install
-libcairo-script-interpreter2			install
-libcairo2					install
+libcaca0:amd64					install
+libcairo-gobject2:amd64				install
+libcairo-script-interpreter2:amd64		install
+libcairo2:amd64					install
 libcairo2-dev					install
-libcanberra-gtk3-0				install
-libcanberra-gtk3-module				install
-libcanberra0					install
-libcap2						install
-libcdt4						install
-libcgraph5					install
-libck-connector0				install
-libclass-isa-perl				install
-libcomerr2					install
-libcommons-cli-java				install
-libcommons-daemon-java				install
-libcommons-lang-java				install
-libcommons-logging-java				install
-libcommons-parent-java				install
-libcroco3					install
+libcanberra0:amd64				install
+libcap-ng0					install
+libcap2:amd64					install
+libcap2-bin					install
+libcdt5						install
+libcgmanager0:amd64				install
+libcgraph6					install
+libck-connector0:amd64				install
+libclass-accessor-perl				install
+libcloog-isl4:amd64				install
+libcolord1:amd64				install
+libcomerr2:amd64				install
+libcroco3:amd64					install
 libcryptsetup4					install
-libcups2					install
-libcupsimage2					install
-libcurl3					install
-libcurl3-gnutls					install
-libcurl4-openssl-dev				install
-libdap11					install
-libdapclient3					install
-libdatrie1					install
-libdb4.8					install
-libdb5.1					install
+libcups2:amd64					install
+libcurl3:amd64					install
+libcurl3-gnutls:amd64				install
+libcurl4-gnutls-dev:amd64			install
+libcwidget3					install
+libdatrie1:amd64				install
+libdb5.3:amd64					install
 libdbd-mysql-perl				install
 libdbi-perl					install
-libdbus-1-3					install
-libdbus-glib-1-2				install
-libdconf0					install
-libdevmapper-event1.02.1			install
-libdevmapper1.02.1				install
-libdjvulibre-dev				install
+libdbus-1-3:amd64				install
+libdbus-glib-1-2:amd64				install
+libdconf1:amd64					install
+libdebconfclient0:amd64				install
+libdevmapper-event1.02.1:amd64			install
+libdevmapper1.02.1:amd64			install
+libdjvulibre-dev:amd64				install
 libdjvulibre-text				install
-libdjvulibre21					install
+libdjvulibre21:amd64				install
+libdns100					install
 libdpkg-perl					install
-libdrm-dev					install
-libdrm-intel1					install
-libdrm-nouveau1a				install
-libdrm-nouveau2					install
-libdrm-radeon1					install
-libdrm2						install
-libedit2					install
-libelf1						install
-libepsilon0					install
+libdrm-amdgpu1:amd64				install
+libdrm-dev:amd64				install
+libdrm-intel1:amd64				install
+libdrm-nouveau2:amd64				install
+libdrm-radeon1:amd64				install
+libdrm2:amd64					install
+libdumbnet1					install
+libedit2:amd64					install
+libelf1:amd64					install
+libelfg0:amd64					install
+libept1.4.12:amd64				install
 liberror-perl					install
-libevent-2.0-5					install
+libestr0					install
+libevent-2.0-5:amd64				install
 libexif-dev					install
-libexif12					install
-libexpat1					install
-libexpat1-dev					install
-libffi-dev					install
-libffi6						install
-libfile-basedir-perl				install
-libfile-desktopentry-perl			install
-libfile-mimeinfo-perl				install
-libfl-dev					install
-libflac8					install
-libfontconfig1					install
+libexif12:amd64					install
+libexpat1:amd64					install
+libexpat1-dev:amd64				install
+libffi-dev:amd64				install
+libffi6:amd64					install
+libfftw3-double3:amd64				install
+libfl-dev:amd64					install
+libflac8:amd64					install
+libfontconfig1:amd64				install
 libfontconfig1-dev				install
-libfontenc1					install
-libfreetype6					install
+libfontenc1:amd64				install
+libfreetype6:amd64				install
 libfreetype6-dev				install
-libfreexl1					install
-libfuse2					install
-libgcc1						install
-libgcc1:i386					install
-libgconf-2-4					install
-libgconf2-4					install
-libgcrypt11					install
+libfribidi0:amd64				install
+libfuse2:amd64					install
+libgc1c2:amd64					install
+libgcc-4.8-dev:amd64				install
+libgcc1:amd64					install
+libgck-1-0:amd64				install
+libgconf-2-4:amd64				install
+libgconf2-4:amd64				install
+libgcr-3-common					install
+libgcr-base-3-1:amd64				install
+libgcrypt11:amd64				install
 libgcrypt11-dev					install
-libgd2-noxpm					install
-libgdal1					install
+libgd3:amd64					install
 libgdbm-dev					install
-libgdbm3					install
-libgdk-pixbuf2.0-0				install
+libgdbm3:amd64					install
+libgdk-pixbuf2.0-0:amd64			install
 libgdk-pixbuf2.0-common				install
 libgdk-pixbuf2.0-dev				install
-libgdu0						install
-libgeos-3.2.2					deinstall
-libgeos-3.3.8					install
-libgeos-c1					install
-libgeos-dev					install
-libgettextpo0					install
-libgfortran3					install
-libgif4						install
+libgeoip1:amd64					install
+libgif4:amd64					install
 libgirepository-1.0-1				install
 libgl1-mesa-dev					install
-libgl1-mesa-dri					install
-libgl1-mesa-glx					install
-libglapi-mesa					install
-libglib2.0-0					install
+libgl1-mesa-glx:amd64				install
+libglapi-mesa:amd64				install
+libglib2.0-0:amd64				install
 libglib2.0-bin					install
 libglib2.0-data					install
 libglib2.0-dev					install
-libglu1-mesa					install
-libglu1-mesa-dev				install
-libgmp10					install
-libgnome-keyring-common				install
-libgnome-keyring0				install
-libgnome2-0					install
+libgmp-dev:amd64				install
+libgmp10:amd64					install
+libgmp3-dev					install
+libgmpxx4ldbl:amd64				install
+libgnome2-0:amd64				install
 libgnome2-bin					install
 libgnome2-common				install
-libgnomevfs2-0					install
+libgnomevfs2-0:amd64				install
 libgnomevfs2-common				install
 libgnutls-dev					install
-libgnutls-openssl27				install
-libgnutls26					install
-libgnutlsxx27					install
-libgomp1					install
+libgnutls-openssl27:amd64			install
+libgnutls26:amd64				install
+libgnutlsxx27:amd64				install
+libgomp1:amd64					install
 libgpg-error-dev				install
-libgpg-error0					install
-libgpm2						install
-libgraph4					install
+libgpg-error0:amd64				install
+libgpm2:amd64					install
+libgraphite2-3:amd64				install
 libgraphviz-dev					install
-libgs9						install
-libgs9-common					install
-libgssapi-krb5-2				install
-libgssapi3-heimdal				install
-libgssrpc4					install
-libgstreamer-plugins-base0.10-0			install
-libgstreamer0.10-0				install
-libgtk-3-0					install
-libgtk-3-bin					install
+libgssapi-krb5-2:amd64				install
+libgssapi3-heimdal:amd64			install
+libgssrpc4:amd64				install
+libgtk-3-0:amd64				install
 libgtk-3-common					install
-libgtk2.0-0					install
-libgtk2.0-bin					install
+libgtk2.0-0:amd64				install
 libgtk2.0-common				install
-libgtk2.0-dev					install
-libgudev-1.0-0					install
-libgvc5						install
-libgvpr1					install
-libhamcrest-java				install
-libhashkit0					install
-libhawtjni-runtime-java				install
-libhcrypto4-heimdal				install
-libhdf4-0-alt					install
-libhdf5-serial-1.8.4				install
-libheimbase1-heimdal				install
-libheimntlm0-heimdal				install
-libhtml-template-perl				install
-libhx509-5-heimdal				install
-libice-dev					install
-libice6						install
-libicu-dev					install
-libicu48					install
+libgudev-1.0-0:amd64				install
+libgvc6						install
+libgvc6-plugins-gtk				install
+libgvpr2					install
+libharfbuzz0b:amd64				install
+libhavege1:amd64				install
+libhcrypto4-heimdal:amd64			install
+libheimbase1-heimdal:amd64			install
+libheimntlm0-heimdal:amd64			install
+libhx509-5-heimdal:amd64			install
+libice-dev:amd64				install
+libice6:amd64					install
+libicu-dev:amd64				install
+libicu52:amd64					install
 libidl-common					install
-libidl0						install
-libidn11					install
+libidl0:amd64					install
+libidn11:amd64					install
 libidn11-dev					install
-libijs-0.35					install
 libilmbase-dev					install
-libilmbase6					install
-libjansi-java					install
-libjansi-native-java				install
+libilmbase6:amd64				install
+libio-string-perl				install
+libisc95					install
+libisccc90					install
+libisccfg90					install
+libisl10:amd64					install
+libitm1:amd64					install
 libjasper-dev					install
-libjasper1					install
-libjbig2dec0					install
-libjline-java					install
-libjpeg-dev					install
-libjpeg-turbo8					install
-libjpeg-turbo8-dev				install
-libjpeg8					install
-libjpeg8-dev					install
+libjasper1:amd64				install
+libjbig-dev:amd64				install
+libjbig0:amd64					install
+libjpeg-turbo8:amd64				install
+libjpeg-turbo8-dev:amd64			install
+libjpeg8:amd64					install
+libjpeg8-dev:amd64				install
 libjs-jquery					install
-libjson0					install
-libk5crypto3					install
-libkadm5clnt-mit8				install
-libkadm5srv-mit8				install
-libkdb5-6					install
-libkeyutils1					install
+libjson-c2:amd64				install
+libjson0:amd64					install
+libjsoncpp0:amd64				install
+libk5crypto3:amd64				install
+libkadm5clnt-mit9:amd64				install
+libkadm5srv-mit9:amd64				install
+libkdb5-7:amd64					install
+libkeyutils1:amd64				install
 libklibc					install
-libkrb5-26-heimdal				install
-libkrb5-3					install
+libkmod2:amd64					install
+libkrb5-26-heimdal:amd64			install
+libkrb5-3:amd64					install
 libkrb5-dev					install
-libkrb5support0					install
-liblapack3gf					install
-liblcms1					install
-liblcms1-dev					install
-liblcms2-2					install
-libldap-2.4-2					install
-libldap2-dev					install
-libllvm3.0					install
+libkrb5support0:amd64				install
+libksba8:amd64					install
+liblcms2-2:amd64				install
+liblcms2-dev:amd64				install
+libldap-2.4-2:amd64				install
+libldap2-dev:amd64				install
+libllvm3.4:amd64				install
 liblocale-gettext-perl				install
 liblockfile-bin					install
-liblockfile1					install
-liblqr-1-0					install
+liblockfile1:amd64				install
+liblog-message-simple-perl			install
+liblqr-1-0:amd64				install
 liblqr-1-0-dev					install
-libltdl-dev					install
-libltdl7					install
-liblvm2app2.2					install
-liblwgeom-2.1.5					install
-liblzma5					install
-libmagic1					install
+libltdl-dev:amd64				install
+libltdl7:amd64					install
+liblwres90					install
+liblzma-dev:amd64				install
+liblzma5:amd64					install
+liblzo2-2:amd64					install
+libm17n-0					install
+libmagic1:amd64					install
 libmagickcore-dev				install
-libmagickcore4					install
-libmagickcore4-extra				install
+libmagickcore5:amd64				install
+libmagickcore5-extra:amd64			install
 libmagickwand-dev				install
-libmagickwand4					install
-libmail-sendmail-perl				install
-libmemcached-dev				install
-libmemcached6					install
-libmemcachedprotocol0				install
-libmemcachedutil1				install
-libmng1						install
-libmockobjects-java				install
-libmount1					install
-libmozjs185-1.0					install
-libmpc2						install
-libmpfr4					install
-libmysql++-dev					install
-libmysql++3					install
-libmysql-ruby					install
+libmagickwand5:amd64				install
+libmcrypt-dev					install
+libmcrypt4					install
+libmhash-dev					install
+libmhash2:amd64					install
+libmodule-pluggable-perl			install
+libmount1:amd64					install
+libmpc3:amd64					install
+libmpdec2:amd64					install
+libmpfr4:amd64					install
 libmysqlclient-dev				install
-libmysqlclient18				install
-libncurses5					install
-libncurses5-dev					install
-libncursesw5					install
-libncursesw5-dev				install
-libneon27-gnutls				install
-libnet-daemon-perl				install
-libnetcdf6					install
-libnetpbm10					install
-libnettle4					install
-libnfnetlink0					install
-libnih-dbus1					install
-libnih1						install
-libnotify4					install
-libnspr4					install
-libnss3						install
-libnss3-1d					install
-libodbc1					install
-libogg0						install
+libmysqlclient18:amd64				install
+libncurses5:amd64				install
+libncurses5-dev:amd64				install
+libncursesw5:amd64				install
+libncursesw5-dev:amd64				install
+libnettle4:amd64				install
+libnewt0.52:amd64				install
+libnfnetlink0:amd64				install
+libnih-dbus1:amd64				install
+libnih1:amd64					install
+libnl-3-200:amd64				install
+libnl-genl-3-200:amd64				install
+libnspr4:amd64					install
+libnss3:amd64					install
+libnss3-nssdb					install
+libnuma1:amd64					install
+libogg0:amd64					install
 libopenexr-dev					install
-libopenexr6					install
-libopts25					install
-libopts25-dev					install
-liborbit2					install
-liborc-0.4-0					install
+libopenexr6:amd64				install
+libopts25:amd64					install
+liborbit-2-0:amd64				install
+liborbit2:amd64					install
 libossp-uuid-dev				install
 libossp-uuid16					install
+libotf0:amd64					install
 libp11-kit-dev					install
-libp11-kit0					install
-libpam-ck-connector				install
-libpam-modules					install
+libp11-kit0:amd64				install
+libpam-cap:amd64				install
+libpam-modules:amd64				install
 libpam-modules-bin				install
 libpam-runtime					install
-libpam0g					install
-libpango1.0-0					install
-libpango1.0-dev					install
-libpaper-utils					install
-libpaper1					install
-libparted0debian1				install
+libpam-systemd:amd64				install
+libpam0g:amd64					install
+libpam0g-dev:amd64				install
+libpango-1.0-0:amd64				install
+libpangocairo-1.0-0:amd64			install
+libpangoft2-1.0-0:amd64				install
+libparse-debianchangelog-perl			install
+libparted0debian1:amd64				install
 libpathplan4					install
-libpciaccess0					install
-libpcre3					install
-libpcre3-dev					install
-libpcrecpp0					install
-libpcsclite1					install
-libpgm-5.1-0					install
-libpipeline1					install
-libpixman-1-0					install
+libpcap0.8:amd64				install
+libpci3:amd64					install
+libpciaccess0:amd64				install
+libpcre3:amd64					install
+libpcre3-dev:amd64				install
+libpcrecpp0:amd64				install
+libpcsclite1:amd64				install
+libpipeline1:amd64				install
+libpixman-1-0:amd64				install
 libpixman-1-dev					install
-libplrpc-perl					install
-libplymouth2					install
-libpng12-0					install
+libplymouth2:amd64				install
+libpng12-0:amd64				install
 libpng12-dev					install
-libpolkit-agent-1-0				install
-libpolkit-backend-1-0				install
-libpolkit-gobject-1-0				install
-libpoppler19					install
-libpopt0					install
+libpod-latex-perl				install
+libpolkit-agent-1-0:amd64			install
+libpolkit-backend-1-0:amd64			install
+libpolkit-gobject-1-0:amd64			install
+libpopt0:amd64					install
 libpq-dev					install
 libpq5						install
-libproj0					install
-libpthread-stubs0				install
-libpthread-stubs0-dev				install
-libpulse0					install
-libpython2.7					install
-libqt4-dbus					install
-libqt4-declarative				install
-libqt4-designer					install
+libprocps3:amd64				install
+libpth20:amd64					install
+libpthread-stubs0-dev:amd64			install
+libpulse0:amd64					install
+libpython-dev:amd64				install
+libpython-stdlib:amd64				install
+libpython2.7:amd64				install
+libpython2.7-dev:amd64				install
+libpython2.7-minimal:amd64			install
+libpython2.7-stdlib:amd64			install
+libpython3-dev:amd64				install
+libpython3-stdlib:amd64				install
+libpython3.4:amd64				install
+libpython3.4-dev:amd64				install
+libpython3.4-minimal:amd64			install
+libpython3.4-stdlib:amd64			install
+libqt4-dbus:amd64				install
+libqt4-declarative:amd64			install
+libqt4-designer:amd64				install
 libqt4-dev					install
-libqt4-help					install
-libqt4-network					install
-libqt4-opengl					install
-libqt4-opengl-dev				install
-libqt4-qt3support				install
-libqt4-script					install
-libqt4-scripttools				install
-libqt4-sql					install
-libqt4-sql-mysql				install
-libqt4-svg					install
-libqt4-test					install
-libqt4-xml					install
-libqt4-xmlpatterns				install
-libqtcore4					install
-libqtgui4					install
-libqtwebkit-dev					install
-libqtwebkit4					install
-libquadmath0					install
-libreadline-dev					install
-libreadline5					install
-libreadline6					install
-libreadline6-dev				install
-libregexp-java					install
-libroken18-heimdal				install
-librsvg2-2					install
-librsvg2-bin					install
-librsvg2-common					install
+libqt4-dev-bin					install
+libqt4-help:amd64				install
+libqt4-network:amd64				install
+libqt4-qt3support:amd64				install
+libqt4-script:amd64				install
+libqt4-scripttools:amd64			install
+libqt4-sql:amd64				install
+libqt4-svg:amd64				install
+libqt4-test:amd64				install
+libqt4-xml:amd64				install
+libqt4-xmlpatterns:amd64			install
+libqtcore4:amd64				install
+libqtdbus4:amd64				install
+libqtgui4:amd64					install
+libquadmath0:amd64				install
+libreadline-dev:amd64				install
+libreadline5:amd64				install
+libreadline6:amd64				install
+libreadline6-dev:amd64				install
+libroken18-heimdal:amd64			install
+librsvg2-2:amd64				install
+librsvg2-common:amd64				install
 librsvg2-dev					install
 librtmp-dev					install
-librtmp0					install
-libruby1.8					install
-libsasl2-2					install
+librtmp0:amd64					install
+libruby1.9.1					install
+libruby2.0:amd64				install
+libsasl2-2:amd64				install
 libsasl2-dev					install
-libsasl2-modules				install
-libsctp1					install
-libselinux1					install
-libservlet2.5-java				install
-libsgutils2-2					install
-libsigsegv2					install
-libslang2					install
-libsm-dev					install
-libsm6						install
-libsndfile1					install
-libspatialite3					install
-libsqlite3-0					install
-libsqlite3-dev					install
-libss2						install
-libssl-dev					install
-libssl-doc					install
-libssl0.9.8					install
-libssl1.0.0					install
-libstartup-notification0			install
-libstdc++6					install
-libstdc++6:i386					install
-libstdc++6-4.6-dev				install
-libsvn1						install
-libswitch-perl					install
-libsys-hostname-long-perl			install
-libtasn1-3					install
-libtasn1-3-dev					install
-libtdb1						install
+libsasl2-modules:amd64				install
+libsasl2-modules-db:amd64			install
+libsctp1:amd64					install
+libsdl1.2debian:amd64				install
+libsecret-1-0:amd64				install
+libsecret-common				install
+libselinux1:amd64				install
+libsemanage-common				install
+libsemanage1:amd64				install
+libsepol1:amd64					install
+libserf-1-1:amd64				install
+libsigc++-2.0-0c2a:amd64			install
+libsigsegv2:amd64				install
+libslang2:amd64					install
+libsm-dev:amd64					install
+libsm6:amd64					install
+libsndfile1:amd64				install
+libsqlite3-0:amd64				install
+libsqlite3-dev:amd64				install
+libss2:amd64					install
+libssl-dev:amd64				install
+libssl0.9.8:amd64				install
+libssl1.0.0:amd64				install
+libstdc++-4.8-dev:amd64				install
+libstdc++6:amd64				install
+libsub-name-perl				install
+libsvn1:amd64					install
+libsystemd-daemon0:amd64			install
+libsystemd-journal0:amd64			install
+libsystemd-login0:amd64				install
+libt1-5						install
+libt1-dev					install
+libtasn1-6:amd64				install
+libtasn1-6-dev					install
+libtcl8.6:amd64					install
+libtdb1:amd64					install
 libterm-readkey-perl				install
+libterm-ui-perl					install
+libtext-charwidth-perl				install
+libtext-iconv-perl				install
+libtext-soundex-perl				install
+libtext-wrapi18n-perl				install
 libthai-data					install
-libthai0					install
-libtiff4					install
-libtiff4-dev					install
-libtiffxx0c2					install
+libthai0:amd64					install
+libtidy-0.99-0					install
+libtidy-dev					install
+libtiff5:amd64					install
+libtiff5-dev:amd64				install
+libtiffxx5:amd64				install
 libtimedate-perl				install
-libtinfo-dev					install
-libtinfo5					install
+libtinfo-dev:amd64				install
+libtinfo5:amd64					install
+libtk8.6:amd64					install
 libtool						install
-libudev0					install
-libunistring0					install
-libusb-0.1-4					install
-libuuid1					install
-libvorbis0a					install
-libvorbisenc2					install
-libvorbisfile3					install
-libwind0-heimdal				install
+libtsan0:amd64					install
+libudev1:amd64					install
+libudisks2-0:amd64				install
+libunistring0:amd64				install
+libusb-0.1-4:amd64				install
+libusb-1.0-0:amd64				install
+libustr-1.0-1:amd64				install
+libutempter0					install
+libuuid1:amd64					install
+libvorbis0a:amd64				install
+libvorbisenc2:amd64				install
+libvorbisfile3:amd64				install
+libvpx1:amd64					install
+libwayland-client0:amd64			install
+libwayland-cursor0:amd64			install
+libwind0-heimdal:amd64				install
 libwmf-dev					install
-libwmf0.2-7					install
-libwrap0					install
-libx11-6					install
+libwmf0.2-7:amd64				install
+libwrap0:amd64					install
+libx11-6:amd64					install
 libx11-data					install
-libx11-dev					install
-libx11-doc					install
-libx11-xcb1					install
-libxau-dev					install
-libxau6						install
-libxaw7						install
-libxcb-glx0					install
-libxcb-render0					install
-libxcb-render0-dev				install
-libxcb-shape0					install
-libxcb-shm0					install
-libxcb-shm0-dev					install
-libxcb-util0					install
-libxcb1						install
-libxcb1-dev					install
-libxcomposite-dev				install
-libxcomposite1					install
-libxcursor-dev					install
-libxcursor1					install
-libxdamage-dev					install
-libxdamage1					install
-libxdmcp-dev					install
-libxdmcp6					install
+libx11-dev:amd64				install
+libx11-xcb-dev:amd64				install
+libx11-xcb1:amd64				install
+libxapian22					install
+libxau-dev:amd64				install
+libxau6:amd64					install
+libxaw7:amd64					install
+libxaw7-dev:amd64				install
+libxcb-dri2-0:amd64				install
+libxcb-dri2-0-dev:amd64				install
+libxcb-dri3-0:amd64				install
+libxcb-dri3-dev:amd64				install
+libxcb-glx0:amd64				install
+libxcb-glx0-dev:amd64				install
+libxcb-present-dev:amd64			install
+libxcb-present0:amd64				install
+libxcb-randr0:amd64				install
+libxcb-randr0-dev:amd64				install
+libxcb-render0:amd64				install
+libxcb-render0-dev:amd64			install
+libxcb-shape0:amd64				install
+libxcb-shape0-dev:amd64				install
+libxcb-shm0:amd64				install
+libxcb-shm0-dev:amd64				install
+libxcb-sync-dev:amd64				install
+libxcb-sync1:amd64				install
+libxcb-xfixes0:amd64				install
+libxcb-xfixes0-dev:amd64			install
+libxcb1:amd64					install
+libxcb1-dev:amd64				install
+libxcomposite1:amd64				install
+libxcursor1:amd64				install
+libxdamage-dev:amd64				install
+libxdamage1:amd64				install
+libxdmcp-dev:amd64				install
+libxdmcp6:amd64					install
 libxdot4					install
-libxerces-c28					install
-libxerces2-java					install
-libxext-dev					install
-libxext6					install
-libxfixes-dev					install
-libxfixes3					install
-libxfont1					install
+libxext-dev:amd64				install
+libxext6:amd64					install
+libxfixes-dev:amd64				install
+libxfixes3:amd64				install
+libxfont1:amd64					install
 libxft-dev					install
-libxft2						install
-libxi-dev					install
-libxi6						install
-libxinerama-dev					install
-libxinerama1					install
-libxkbfile1					install
-libxml-commons-external-java			install
-libxml-commons-resolver1.1-java			install
-libxml2						install
-libxml2-dev					install
-libxml2-utils					install
-libxmlrpc-core-c3				install
-libxmu6						install
-libxmuu1					install
-libxpm4						install
-libxpp3-java					install
-libxrandr-dev					install
-libxrandr2					install
-libxrender-dev					install
-libxrender1					install
-libxslt1-dev					install
-libxslt1.1					install
-libxss1						install
-libxstream-java					install
-libxt-dev					install
-libxt6						install
-libxtst6					install
-libxv1						install
-libxxf86dga1					install
-libxxf86vm1					install
-libyaml-0-2					install
-libyaml-dev					install
-libzmq3						install
-linux-libc-dev					install
+libxft2:amd64					install
+libxi6:amd64					install
+libxinerama1:amd64				install
+libxkbcommon0:amd64				install
+libxml2:amd64					install
+libxml2-dev:amd64				install
+libxmu-dev:amd64				install
+libxmu-headers					install
+libxmu6:amd64					install
+libxmuu1:amd64					install
+libxpm-dev:amd64				install
+libxpm4:amd64					install
+libxrandr2:amd64				install
+libxrender-dev:amd64				install
+libxrender1:amd64				install
+libxshmfence-dev:amd64				install
+libxshmfence1:amd64				install
+libxslt1-dev:amd64				install
+libxslt1.1:amd64				install
+libxss-dev:amd64				install
+libxss1:amd64					install
+libxt-dev:amd64					install
+libxt6:amd64					install
+libxtables10					install
+libxtst6:amd64					install
+libxv1:amd64					install
+libxxf86dga1:amd64				install
+libxxf86vm-dev:amd64				install
+libxxf86vm1:amd64				install
+libyaml-0-2:amd64				install
+libyaml-dev:amd64				install
+linux-firmware					install
+linux-image-4.4.0-71-generic			install
+linux-image-4.4.0-78-generic			install
+linux-image-extra-4.4.0-71-generic		install
+linux-image-extra-4.4.0-78-generic		install
+linux-image-generic-lts-xenial			install
+linux-libc-dev:amd64				install
 lksctp-tools					install
+llvm						install
+llvm-3.4					install
+llvm-3.4-dev					install
+llvm-3.4-runtime				install
+llvm-runtime					install
 locales						install
+lockfile-progs					install
 login						install
 logrotate					install
 lsb-base					install
 lsb-release					install
+lshw						install
 lsof						install
+ltrace						install
+lvm2						install
+m17n-contrib					install
+m17n-db						install
 m4						install
 make						install
 makedev						install
 man-db						install
 manpages					install
-manpages-dev					install
 mawk						install
 md5deep						install
-memcached					install
 mercurial					install
 mercurial-common				install
 mesa-common-dev					install
@@ -866,184 +1511,225 @@ mime-support					install
 mingw32						install
 mingw32-binutils				install
 mingw32-runtime					install
+mlocate						install
+mlock						install
 module-init-tools				install
-mongodb-10gen					install
 mount						install
 mountall					install
-mtools						install
+mtr-tiny					install
 multiarch-support				install
 mysql-client					install
 mysql-client-5.5				install
 mysql-client-core-5.5				install
 mysql-common					install
-mysql-server					install
-mysql-server-5.5				install
-mysql-server-core-5.5				install
+nano						install
 ncurses-base					install
 ncurses-bin					install
+ncurses-term					install
+net-tools					install
 netbase						install
 netcat-openbsd					install
-netpbm						install
-notification-daemon				install
 ntfs-3g						install
-odbcinst					install
-odbcinst1debian2				install
-openjdk-6-jdk					install
-openjdk-6-jre					install
-openjdk-6-jre-headless				install
-openjdk-6-jre-lib				install
-openjdk-7-jdk					install
-openjdk-7-jre					install
-openjdk-7-jre-headless				install
+ntp						install
+ntpdate						install
+open-vm-tools					install
+openjdk-7-jdk:amd64				install
+openjdk-7-jre:amd64				install
+openjdk-7-jre-headless:amd64			install
+openjdk-8-jdk:amd64				install
+openjdk-8-jdk-headless:amd64			install
+openjdk-8-jre:amd64				install
+openjdk-8-jre-headless:amd64			install
 openssh-client					install
 openssh-server					install
+openssh-sftp-server				install
 openssl						install
-oracle-java7-installer				install
-oracle-java8-installer				install
+os-prober					install
+overlayroot					install
+parted						install
 passwd						install
 patch						install
+pciutils					install
 perl						install
 perl-base					install
 perl-modules					install
-pgdg-keyring					install
+pinentry-gtk2					install
 pkg-config					install
 plymouth					install
-po-debconf					install
+plymouth-theme-ubuntu-text			install
 policykit-1					install
 policykit-1-gnome				install
-postgresql-9.1					install
-postgresql-9.1-postgis-2.1			install
-postgresql-9.1-postgis-scripts			install
-postgresql-9.2					install
-postgresql-9.2-postgis-2.1			install
-postgresql-9.2-postgis-scripts			install
-postgresql-9.3					install
-postgresql-9.3-postgis-2.1			install
-postgresql-9.3-postgis-scripts			install
-postgresql-9.4					install
-postgresql-9.4-postgis-2.1			install
-postgresql-9.4-postgis-scripts			install
+pollinate					install
 postgresql-client				install
-postgresql-client-9.1				install
-postgresql-client-9.2				install
 postgresql-client-9.3				install
-postgresql-client-9.4				install
 postgresql-client-common			install
-postgresql-common				install
-postgresql-contrib-9.1				install
-postgresql-contrib-9.2				install
-postgresql-contrib-9.3				install
-postgresql-contrib-9.4				install
 powermgmt-base					install
 procps						install
-proj-bin					install
-proj-data					install
 psmisc						install
 python						install
 python-apt					install
 python-apt-common				install
+python-boto					install
 python-bzrlib					install
+python-chardet					install
+python-cheetah					install
 python-configobj				install
-python-crypto					install
+python-crcmod					install
+python-debian					install
 python-dev					install
-python-gnupginterface				install
-python-httplib2					install
-python-keyring					install
-python-launchpadlib				install
-python-lazr.restfulclient			install
-python-lazr.uri					install
+python-gdbm					install
+python-google-compute-engine			install
+python-json-pointer				install
+python-jsonpatch				install
 python-minimal					install
 python-oauth					install
-python-paramiko					install
+python-openssl					install
+python-pam					install
 python-pkg-resources				install
+python-prettytable				install
 python-pycurl					install
-python-simplejson				install
-python-software-properties			install
-python-wadllib					install
+python-requests					install
+python-serial					install
+python-six					install
+python-twisted-bin				install
+python-twisted-core				install
+python-twisted-names				install
+python-twisted-web				install
+python-urllib3					install
+python-xapian					install
+python-yaml					install
 python-zope.interface				install
 python2.7					install
 python2.7-dev					install
 python2.7-minimal				install
+python3						install
+python3-apport					install
+python3-apt					install
+python3-commandnotfound				install
+python3-dbus					install
+python3-dev					install
+python3-distupgrade				install
+python3-gdbm:amd64				install
+python3-gi					install
+python3-minimal					install
+python3-newt					install
+python3-problem-report				install
+python3-pycurl					install
+python3-software-properties			install
+python3-update-manager				install
+python3.4					install
+python3.4-dev					install
+python3.4-minimal				install
 qdbus						install
 qt4-linguist-tools				install
 qt4-qmake					install
-rabbitmq-server					install
+qtchooser					install
+qtcore4-l10n					install
 ragel						install
+re2c						install
 readline-common					install
-redis-server					install
-riak						install
+resolvconf					install
 rsync						install
+rsyslog						install
 ruby						install
-ruby-mysql					install
-ruby1.8						install
-scons						install
+ruby1.9.1					install
+ruby2.0						install
+rubygems-integration				install
+run-one						install
+screen						install
 sed						install
 sensible-utils					install
 sgml-base					install
 shared-mime-info				install
+software-properties-common			install
 sound-theme-freedesktop				install
 sqlite3						install
 sqlite3-doc					install
-ssh						install
 ssh-import-id					install
-ssl-cert					install
+sshguard					install
+strace						install
 subversion					install
 sudo						install
+systemd-services				install
+systemd-shim					install
 sysv-rc						install
 sysvinit-utils					install
 tar						install
-tcl8.5						install
+tasksel						install
+tasksel-data					install
+tcl						install
+tcl-dev:amd64					install
+tcl8.6						install
+tcl8.6-dev:amd64				install
 tcpd						install
-ttf-dejavu-core					install
-ttf-dejavu-extra				install
+tcpdump						install
+telnet						install
+thin-provisioning-tools				install
+time						install
+tk						install
+tk-dev:amd64					install
+tk8.6						install
+tk8.6-dev:amd64					install
+tmux						install
 tzdata						install
 tzdata-java					install
 ubuntu-keyring					install
+ubuntu-minimal					install
+ubuntu-release-upgrader-core			install
 ucf						install
 udev						install
-udisks						install
+udisks2						install
+ufw						install
 unattended-upgrades				install
 unzip						install
+update-manager-core				install
+update-notifier-common				install
 upstart						install
+ureadahead					install
+usbutils					install
 util-linux					install
+uuid-runtime					install
 vim						install
 vim-common					install
 vim-runtime					install
+vim-tiny					install
+w3m						install
 wamerican					install
+watershed					install
 wget						install
+whiptail					install
+wireless-regdb					install
 x11-common					install
 x11-utils					install
-x11-xkb-utils					install
-x11-xserver-utils				install
-x11proto-composite-dev				install
 x11proto-core-dev				install
 x11proto-damage-dev				install
+x11proto-dri2-dev				install
 x11proto-fixes-dev				install
+x11proto-gl-dev					install
 x11proto-input-dev				install
 x11proto-kb-dev					install
-x11proto-randr-dev				install
 x11proto-render-dev				install
+x11proto-scrnsaver-dev				install
 x11proto-xext-dev				install
-x11proto-xinerama-dev				install
+x11proto-xf86vidmode-dev			install
 xauth						install
-xdg-utils					install
-xfonts-base					install
+xbitmaps					install
 xfonts-encodings				install
 xfonts-utils					install
+xfsprogs					install
 xkb-data					install
 xml-core					install
 xorg-sgml-doctools				install
-xserver-common					install
-xserver-xorg-core				install
+xterm						install
 xtrans-dev					install
-xvfb						install
-xz-lzma						install
 xz-utils					install
+zerofree					install
 zip						install
-zlib1g						install
-zlib1g-dev					install
+zlib1g:amd64					install
+zlib1g-dev:amd64				install
 
-
-The command "dpkg --get-selections" exited with 0.
+travis_time:end:06c34c80:start=1496757245230179135,finish=1496757245255602418,duration=25423283
+[0K
+[32;1mThe command "dpkg --get-selections" exited with 0.[0m
 
 Done. Your build exited with 0.
