@@ -1,0 +1,1049 @@
+Worker information
+hostname: i-04a7335-precise-production-2-worker-org-docker.travisci.net:bcbeee47-8c83-41c2-8d85-0ef2c6267d7b
+version: v2.5.0 https://github.com/travis-ci/worker/tree/da3a43228dffc0fcca5a46569ca786b22991979f
+instance: d6ff9b4:travis:android
+startup: 536.04352ms
+Build system information
+Build language: android
+Build group: dev
+Build dist: precise
+Build id: 239973616
+Job id: 239973617
+travis-build version: 4183c5148
+Build image provisioning date and time
+Thu Feb  5 15:09:33 UTC 2015
+Operating System Details
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+Linux Version
+3.13.0-29-generic
+Cookbooks Version
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+GCC version
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+LLVM version
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+Pre-installed Ruby versions
+ruby-1.9.3-p551
+Pre-installed Node.js versions
+v0.10.36
+Pre-installed Go versions
+1.4.1
+Redis version
+redis-server 2.8.19
+riak version
+2.0.2
+MongoDB version
+MongoDB 2.4.12
+CouchDB version
+couchdb 1.6.1
+Neo4j version
+1.9.4
+RabbitMQ Version
+3.4.3
+ElasticSearch version
+1.4.0
+Installed Sphinx versions
+2.0.10
+2.1.9
+2.2.6
+Default Sphinx version
+2.2.6
+Installed Firefox version
+firefox 31.0esr
+PhantomJS version
+1.9.8
+ant -version
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+mvn -version
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+
+$ export DEBIAN_FRONTEND=noninteractive
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libc-bin libc-dev-bin libc6:i386 libc6-dev libc6-i386
+Suggested packages:
+  glibc-doc glibc-doc:i386 locales:i386
+The following packages will be upgraded:
+  libc-bin libc-dev-bin libc6 libc6:i386 libc6-dev libc6-i386
+6 upgraded, 0 newly installed, 0 to remove and 278 not upgraded.
+Need to get 16.8 MB of archives.
+After this operation, 26.6 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-bin amd64 2.15-0ubuntu10.18 [1,178 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-i386 amd64 2.15-0ubuntu10.18 [3,989 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc-dev-bin amd64 2.15-0ubuntu10.18 [84.5 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6-dev amd64 2.15-0ubuntu10.18 [2,948 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6 i386 2.15-0ubuntu10.18 [3,926 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libc6 amd64 2.15-0ubuntu10.18 [4,646 kB]
+Fetched 16.8 MB in 0s (37.0 MB/s)
+Preconfiguring packages ...
+(Reading database ... 72899 files and directories currently installed.)
+Preparing to replace libc-bin 2.15-0ubuntu10.10 (using .../libc-bin_2.15-0ubuntu10.18_amd64.deb) ...
+Unpacking replacement libc-bin ...
+Processing triggers for man-db ...
+Setting up libc-bin (2.15-0ubuntu10.18) ...
+(Reading database ... 72898 files and directories currently installed.)
+Preparing to replace libc6-i386 2.15-0ubuntu10.10 (using .../libc6-i386_2.15-0ubuntu10.18_amd64.deb) ...
+Unpacking replacement libc6-i386 ...
+Replaced by files in installed package libc6:i386 ...
+Preparing to replace libc-dev-bin 2.15-0ubuntu10.10 (using .../libc-dev-bin_2.15-0ubuntu10.18_amd64.deb) ...
+Unpacking replacement libc-dev-bin ...
+Preparing to replace libc6-dev 2.15-0ubuntu10.10 (using .../libc6-dev_2.15-0ubuntu10.18_amd64.deb) ...
+Unpacking replacement libc6-dev ...
+Preparing to replace libc6 2.15-0ubuntu10.10 (using .../libc6_2.15-0ubuntu10.18_amd64.deb) ...
+De-configuring libc6:i386 ...
+Unpacking replacement libc6 ...
+Preparing to replace libc6:i386 2.15-0ubuntu10.10 (using .../libc6_2.15-0ubuntu10.18_i386.deb) ...
+Unpacking replacement libc6:i386 ...
+Processing triggers for man-db ...
+Setting up libc6 (2.15-0ubuntu10.18) ...
+Setting up libc6:i386 (2.15-0ubuntu10.18) ...
+Setting up libc6-i386 (2.15-0ubuntu10.18) ...
+Setting up libc-dev-bin (2.15-0ubuntu10.18) ...
+Setting up libc6-dev (2.15-0ubuntu10.18) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+$ sudo apt-get install libssl1.0.0
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  libssl-dev
+The following packages will be upgraded:
+  libssl-dev libssl1.0.0
+2 upgraded, 0 newly installed, 0 to remove and 276 not upgraded.
+Need to get 2,634 kB of archives.
+After this operation, 29.7 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-dev amd64 1.0.1-4ubuntu5.39 [1,580 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl1.0.0 amd64 1.0.1-4ubuntu5.39 [1,054 kB]
+Fetched 2,634 kB in 0s (15.0 MB/s)
+Preconfiguring packages ...
+(Reading database ... 72898 files and directories currently installed.)
+Preparing to replace libssl-dev 1.0.1-4ubuntu5.21 (using .../libssl-dev_1.0.1-4ubuntu5.39_amd64.deb) ...
+Unpacking replacement libssl-dev ...
+Preparing to replace libssl1.0.0 1.0.1-4ubuntu5.21 (using .../libssl1.0.0_1.0.1-4ubuntu5.39_amd64.deb) ...
+Unpacking replacement libssl1.0.0 ...
+Setting up libssl1.0.0 (1.0.1-4ubuntu5.39) ...
+Setting up libssl-dev (1.0.1-4ubuntu5.39) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+$ git clone --depth=50 --branch=cha-gce-image-diff https://github.com/Lyoness/travis_production_test.git Lyoness/travis_production_test
+Cloning into 'Lyoness/travis_production_test'...
+remote: Counting objects: 176, done.
+remote: Compressing objects: 100% (94/94), done.
+remote: Total 176 (delta 93), reused 150 (delta 72), pack-reused 0
+Receiving objects: 100% (176/176), 41.22 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (93/93), done.
+Checking connectivity... done.
+
+$ cd Lyoness/travis_production_test
+$ git checkout -qf 4304fe372bb9d6319af5c070aaaaf081fe11e205
+No build-tools version is specified in android.components. Consider adding one of:
+build-tools-23.0.1
+build-tools-23.0.0
+build-tools-22.0.1
+build-tools-22.0.0
+build-tools-21.1.2
+build-tools-21.1.1
+build-tools-21.1.0
+build-tools-21.0.2
+build-tools-21.0.1
+build-tools-21.0.0
+build-tools-20.0.0
+build-tools-19.1.0
+build-tools-19.0.3
+build-tools-19.0.2
+build-tools-19.0.1
+build-tools-19.0.0
+build-tools-18.1.1
+build-tools-18.1.0
+build-tools-18.0.1
+build-tools-17.0.0
+The following versions are pre-installed:
+build-tools-21.1.2
+
+$ java -Xmx32m -version
+java version "1.7.0_76"
+Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+$ javac -J-Xmx32m -version
+javac 1.7.0_76
+$ true
+
+$ dpkg --get-selections
+adduser						install
+ant						install
+ant-contrib					install
+ant-optional					install
+antlr						install
+apt						install
+apt-transport-https				install
+apt-utils					install
+autoconf					install
+autogen						install
+automake					install
+autotools-dev					install
+base-files					install
+base-passwd					install
+bash						install
+binutils					install
+binutils-doc					install
+bison						install
+bsdmainutils					install
+bsdutils					install
+build-essential					install
+busybox-initramfs				install
+bzip2						install
+bzr						install
+ca-certificates					install
+ca-certificates-java				install
+ccache						install
+chef						install
+chromium-browser				install
+chromium-browser-l10n				install
+chromium-codecs-ffmpeg-extra			install
+cmake						install
+cmake-data					install
+cmap-adobe-japan1				install
+comerr-dev					install
+consolekit					install
+coreutils					install
+couchdb						install
+couchdb-bin					install
+couchdb-common					install
+cpio						install
+cpp						install
+cpp-4.6						install
+cron						install
+cryptsetup-bin					install
+curl						install
+dash						install
+dbus						install
+dbus-x11					install
+dconf-gsettings-backend				install
+dconf-service					install
+debconf						install
+debconf-utils					install
+debhelper					install
+debianutils					install
+dh-apparmor					install
+diffutils					install
+dmsetup						install
+dosfstools					install
+dpkg						install
+dpkg-dev					install
+e2fslibs					install
+e2fsprogs					install
+eject						install
+elasticsearch					install
+emacs23-bin-common				install
+emacs23-common					install
+emacs23-nox					install
+emacsen-common					install
+erlang-asn1					install
+erlang-base-hipe				install
+erlang-corba					install
+erlang-crypto					install
+erlang-dev					install
+erlang-diameter					install
+erlang-docbuilder				install
+erlang-edoc					install
+erlang-erl-docgen				install
+erlang-eunit					install
+erlang-ic					install
+erlang-inets					install
+erlang-inviso					install
+erlang-mnesia					install
+erlang-nox					install
+erlang-odbc					install
+erlang-os-mon					install
+erlang-parsetools				install
+erlang-percept					install
+erlang-public-key				install
+erlang-runtime-tools				install
+erlang-snmp					install
+erlang-ssh					install
+erlang-ssl					install
+erlang-syntax-tools				install
+erlang-tools					install
+erlang-webtool					install
+erlang-xmerl					install
+expect						install
+fakeroot					install
+file						install
+findutils					install
+firefox-locale-en				install
+flex						install
+fontconfig					install
+fontconfig-config				install
+fuse						install
+g++						install
+g++-4.6						install
+gawk						install
+gcc						install
+gcc-4.6						install
+gcc-4.6-base					install
+gcc-4.6-base:i386				install
+gconf-service					install
+gconf-service-backend				install
+gconf2						install
+gconf2-common					install
+gettext						install
+gettext-base					install
+ghostscript					install
+gir1.2-atk-1.0					install
+gir1.2-freedesktop				install
+gir1.2-gdkpixbuf-2.0				install
+gir1.2-glib-2.0					install
+gir1.2-gtk-2.0					install
+gir1.2-pango-1.0				install
+gir1.2-rsvg-2.0					install
+git						install
+git-man						install
+gnupg						install
+gpgv						install
+grep						install
+groff-base					install
+groovy						install
+gs-cjk-resource					install
+gsfonts						install
+gsfonts-x11					install
+guile-1.8-libs					install
+gvfs						install
+gvfs-common					install
+gvfs-daemons					install
+gvfs-libs					install
+gzip						install
+hdparm						install
+hicolor-icon-theme				install
+hostname					install
+html2text					install
+icedtea-6-jre-cacao				install
+icedtea-6-jre-jamvm				install
+icedtea-6-plugin				install
+icedtea-7-plugin				install
+icedtea-netx					install
+icedtea-netx-common				install
+ifupdown					install
+imagemagick					install
+imagemagick-common				install
+initramfs-tools					install
+initramfs-tools-bin				install
+initscripts					install
+insserv						install
+intltool-debian					install
+iproute						install
+iptables					install
+iso-codes					install
+ivy						install
+java-common					install
+jsvc						install
+junit4						install
+keyboard-configuration				install
+klibc-utils					install
+krb5-locales					install
+krb5-multidev					install
+language-pack-en				install
+language-pack-en-base				install
+less						install
+lib32z1						install
+libacl1						install
+libalgorithm-diff-perl				install
+libalgorithm-diff-xs-perl			install
+libalgorithm-merge-perl				install
+libantlr-java					install
+libapache-pom-java				install
+libapr1						install
+libaprutil1					install
+libapt-inst1.4					install
+libapt-pkg4.12					install
+libarchive12					install
+libarmadillo2					install
+libasm3-java					install
+libasn1-8-heimdal				install
+libasound2					install
+libasyncns0					install
+libatasmart4					install
+libatk-wrapper-java				install
+libatk-wrapper-java-jni				install
+libatk1.0-0					install
+libatk1.0-data					install
+libatk1.0-dev					install
+libattr1					install
+libaudio2					install
+libavahi-client3				install
+libavahi-common-data				install
+libavahi-common3				install
+libavahi-glib1					install
+libbison-dev					install
+libblas3gf					install
+libblkid1					install
+libbonobo2-0					install
+libbonobo2-common				install
+libbsd0						install
+libbsf-java					install
+libbz2-1.0					install
+libbz2-dev					install
+libc-bin					install
+libc-dev-bin					install
+libc6						install
+libc6:i386					install
+libc6-dev					install
+libc6-i386					install
+libcairo-gobject2				install
+libcairo-script-interpreter2			install
+libcairo2					install
+libcairo2-dev					install
+libcanberra-gtk3-0				install
+libcanberra-gtk3-module				install
+libcanberra0					install
+libcap2						install
+libcdt4						install
+libcgraph5					install
+libck-connector0				install
+libclass-isa-perl				install
+libcomerr2					install
+libcommons-cli-java				install
+libcommons-daemon-java				install
+libcommons-lang-java				install
+libcommons-logging-java				install
+libcommons-parent-java				install
+libcroco3					install
+libcryptsetup4					install
+libcups2					install
+libcupsimage2					install
+libcurl3					install
+libcurl3-gnutls					install
+libcurl4-openssl-dev				install
+libdap11					install
+libdapclient3					install
+libdatrie1					install
+libdb4.8					install
+libdb5.1					install
+libdbd-mysql-perl				install
+libdbi-perl					install
+libdbus-1-3					install
+libdbus-glib-1-2				install
+libdconf0					install
+libdevmapper-event1.02.1			install
+libdevmapper1.02.1				install
+libdjvulibre-dev				install
+libdjvulibre-text				install
+libdjvulibre21					install
+libdpkg-perl					install
+libdrm-dev					install
+libdrm-intel1					install
+libdrm-nouveau1a				install
+libdrm-nouveau2					install
+libdrm-radeon1					install
+libdrm2						install
+libedit2					install
+libelf1						install
+libepsilon0					install
+liberror-perl					install
+libevent-2.0-5					install
+libexif-dev					install
+libexif12					install
+libexpat1					install
+libexpat1-dev					install
+libffi-dev					install
+libffi6						install
+libfile-basedir-perl				install
+libfile-desktopentry-perl			install
+libfile-mimeinfo-perl				install
+libfl-dev					install
+libflac8					install
+libfontconfig1					install
+libfontconfig1-dev				install
+libfontenc1					install
+libfreetype6					install
+libfreetype6-dev				install
+libfreexl1					install
+libfuse2					install
+libgcc1						install
+libgcc1:i386					install
+libgconf-2-4					install
+libgconf2-4					install
+libgcrypt11					install
+libgcrypt11-dev					install
+libgd2-noxpm					install
+libgdal1					install
+libgdbm-dev					install
+libgdbm3					install
+libgdk-pixbuf2.0-0				install
+libgdk-pixbuf2.0-common				install
+libgdk-pixbuf2.0-dev				install
+libgdu0						install
+libgeos-3.2.2					deinstall
+libgeos-3.3.8					install
+libgeos-c1					install
+libgeos-dev					install
+libgettextpo0					install
+libgfortran3					install
+libgif4						install
+libgirepository-1.0-1				install
+libgl1-mesa-dev					install
+libgl1-mesa-dri					install
+libgl1-mesa-glx					install
+libglapi-mesa					install
+libglib2.0-0					install
+libglib2.0-bin					install
+libglib2.0-data					install
+libglib2.0-dev					install
+libglu1-mesa					install
+libglu1-mesa-dev				install
+libgmp10					install
+libgnome-keyring-common				install
+libgnome-keyring0				install
+libgnome2-0					install
+libgnome2-bin					install
+libgnome2-common				install
+libgnomevfs2-0					install
+libgnomevfs2-common				install
+libgnutls-dev					install
+libgnutls-openssl27				install
+libgnutls26					install
+libgnutlsxx27					install
+libgomp1					install
+libgpg-error-dev				install
+libgpg-error0					install
+libgpm2						install
+libgraph4					install
+libgraphviz-dev					install
+libgs9						install
+libgs9-common					install
+libgssapi-krb5-2				install
+libgssapi3-heimdal				install
+libgssrpc4					install
+libgstreamer-plugins-base0.10-0			install
+libgstreamer0.10-0				install
+libgtk-3-0					install
+libgtk-3-bin					install
+libgtk-3-common					install
+libgtk2.0-0					install
+libgtk2.0-bin					install
+libgtk2.0-common				install
+libgtk2.0-dev					install
+libgudev-1.0-0					install
+libgvc5						install
+libgvpr1					install
+libhamcrest-java				install
+libhashkit0					install
+libhawtjni-runtime-java				install
+libhcrypto4-heimdal				install
+libhdf4-0-alt					install
+libhdf5-serial-1.8.4				install
+libheimbase1-heimdal				install
+libheimntlm0-heimdal				install
+libhtml-template-perl				install
+libhx509-5-heimdal				install
+libice-dev					install
+libice6						install
+libicu-dev					install
+libicu48					install
+libidl-common					install
+libidl0						install
+libidn11					install
+libidn11-dev					install
+libijs-0.35					install
+libilmbase-dev					install
+libilmbase6					install
+libjansi-java					install
+libjansi-native-java				install
+libjasper-dev					install
+libjasper1					install
+libjbig2dec0					install
+libjline-java					install
+libjpeg-dev					install
+libjpeg-turbo8					install
+libjpeg-turbo8-dev				install
+libjpeg8					install
+libjpeg8-dev					install
+libjs-jquery					install
+libjson0					install
+libk5crypto3					install
+libkadm5clnt-mit8				install
+libkadm5srv-mit8				install
+libkdb5-6					install
+libkeyutils1					install
+libklibc					install
+libkrb5-26-heimdal				install
+libkrb5-3					install
+libkrb5-dev					install
+libkrb5support0					install
+liblapack3gf					install
+liblcms1					install
+liblcms1-dev					install
+liblcms2-2					install
+libldap-2.4-2					install
+libldap2-dev					install
+libllvm3.0					install
+liblocale-gettext-perl				install
+liblockfile-bin					install
+liblockfile1					install
+liblqr-1-0					install
+liblqr-1-0-dev					install
+libltdl-dev					install
+libltdl7					install
+liblvm2app2.2					install
+liblwgeom-2.1.5					install
+liblzma5					install
+libmagic1					install
+libmagickcore-dev				install
+libmagickcore4					install
+libmagickcore4-extra				install
+libmagickwand-dev				install
+libmagickwand4					install
+libmail-sendmail-perl				install
+libmemcached-dev				install
+libmemcached6					install
+libmemcachedprotocol0				install
+libmemcachedutil1				install
+libmng1						install
+libmockobjects-java				install
+libmount1					install
+libmozjs185-1.0					install
+libmpc2						install
+libmpfr4					install
+libmysql++-dev					install
+libmysql++3					install
+libmysql-ruby					install
+libmysqlclient-dev				install
+libmysqlclient18				install
+libncurses5					install
+libncurses5-dev					install
+libncursesw5					install
+libncursesw5-dev				install
+libneon27-gnutls				install
+libnet-daemon-perl				install
+libnetcdf6					install
+libnetpbm10					install
+libnettle4					install
+libnfnetlink0					install
+libnih-dbus1					install
+libnih1						install
+libnotify4					install
+libnspr4					install
+libnss3						install
+libnss3-1d					install
+libodbc1					install
+libogg0						install
+libopenexr-dev					install
+libopenexr6					install
+libopts25					install
+libopts25-dev					install
+liborbit2					install
+liborc-0.4-0					install
+libossp-uuid-dev				install
+libossp-uuid16					install
+libp11-kit-dev					install
+libp11-kit0					install
+libpam-ck-connector				install
+libpam-modules					install
+libpam-modules-bin				install
+libpam-runtime					install
+libpam0g					install
+libpango1.0-0					install
+libpango1.0-dev					install
+libpaper-utils					install
+libpaper1					install
+libparted0debian1				install
+libpathplan4					install
+libpciaccess0					install
+libpcre3					install
+libpcre3-dev					install
+libpcrecpp0					install
+libpcsclite1					install
+libpgm-5.1-0					install
+libpipeline1					install
+libpixman-1-0					install
+libpixman-1-dev					install
+libplrpc-perl					install
+libplymouth2					install
+libpng12-0					install
+libpng12-dev					install
+libpolkit-agent-1-0				install
+libpolkit-backend-1-0				install
+libpolkit-gobject-1-0				install
+libpoppler19					install
+libpopt0					install
+libpq-dev					install
+libpq5						install
+libproj0					install
+libpthread-stubs0				install
+libpthread-stubs0-dev				install
+libpulse0					install
+libpython2.7					install
+libqt4-dbus					install
+libqt4-declarative				install
+libqt4-designer					install
+libqt4-dev					install
+libqt4-help					install
+libqt4-network					install
+libqt4-opengl					install
+libqt4-opengl-dev				install
+libqt4-qt3support				install
+libqt4-script					install
+libqt4-scripttools				install
+libqt4-sql					install
+libqt4-sql-mysql				install
+libqt4-svg					install
+libqt4-test					install
+libqt4-xml					install
+libqt4-xmlpatterns				install
+libqtcore4					install
+libqtgui4					install
+libqtwebkit-dev					install
+libqtwebkit4					install
+libquadmath0					install
+libreadline-dev					install
+libreadline5					install
+libreadline6					install
+libreadline6-dev				install
+libregexp-java					install
+libroken18-heimdal				install
+librsvg2-2					install
+librsvg2-bin					install
+librsvg2-common					install
+librsvg2-dev					install
+librtmp-dev					install
+librtmp0					install
+libruby1.8					install
+libsasl2-2					install
+libsasl2-dev					install
+libsasl2-modules				install
+libsctp1					install
+libselinux1					install
+libservlet2.5-java				install
+libsgutils2-2					install
+libsigsegv2					install
+libslang2					install
+libsm-dev					install
+libsm6						install
+libsndfile1					install
+libspatialite3					install
+libsqlite3-0					install
+libsqlite3-dev					install
+libss2						install
+libssl-dev					install
+libssl-doc					install
+libssl0.9.8					install
+libssl1.0.0					install
+libstartup-notification0			install
+libstdc++6					install
+libstdc++6:i386					install
+libstdc++6-4.6-dev				install
+libsvn1						install
+libswitch-perl					install
+libsys-hostname-long-perl			install
+libtasn1-3					install
+libtasn1-3-dev					install
+libtdb1						install
+libterm-readkey-perl				install
+libthai-data					install
+libthai0					install
+libtiff4					install
+libtiff4-dev					install
+libtiffxx0c2					install
+libtimedate-perl				install
+libtinfo-dev					install
+libtinfo5					install
+libtool						install
+libudev0					install
+libunistring0					install
+libusb-0.1-4					install
+libuuid1					install
+libvorbis0a					install
+libvorbisenc2					install
+libvorbisfile3					install
+libwind0-heimdal				install
+libwmf-dev					install
+libwmf0.2-7					install
+libwrap0					install
+libx11-6					install
+libx11-data					install
+libx11-dev					install
+libx11-doc					install
+libx11-xcb1					install
+libxau-dev					install
+libxau6						install
+libxaw7						install
+libxcb-glx0					install
+libxcb-render0					install
+libxcb-render0-dev				install
+libxcb-shape0					install
+libxcb-shm0					install
+libxcb-shm0-dev					install
+libxcb-util0					install
+libxcb1						install
+libxcb1-dev					install
+libxcomposite-dev				install
+libxcomposite1					install
+libxcursor-dev					install
+libxcursor1					install
+libxdamage-dev					install
+libxdamage1					install
+libxdmcp-dev					install
+libxdmcp6					install
+libxdot4					install
+libxerces-c28					install
+libxerces2-java					install
+libxext-dev					install
+libxext6					install
+libxfixes-dev					install
+libxfixes3					install
+libxfont1					install
+libxft-dev					install
+libxft2						install
+libxi-dev					install
+libxi6						install
+libxinerama-dev					install
+libxinerama1					install
+libxkbfile1					install
+libxml-commons-external-java			install
+libxml-commons-resolver1.1-java			install
+libxml2						install
+libxml2-dev					install
+libxml2-utils					install
+libxmlrpc-core-c3				install
+libxmu6						install
+libxmuu1					install
+libxpm4						install
+libxpp3-java					install
+libxrandr-dev					install
+libxrandr2					install
+libxrender-dev					install
+libxrender1					install
+libxslt1-dev					install
+libxslt1.1					install
+libxss1						install
+libxstream-java					install
+libxt-dev					install
+libxt6						install
+libxtst6					install
+libxv1						install
+libxxf86dga1					install
+libxxf86vm1					install
+libyaml-0-2					install
+libyaml-dev					install
+libzmq3						install
+linux-libc-dev					install
+lksctp-tools					install
+locales						install
+login						install
+logrotate					install
+lsb-base					install
+lsb-release					install
+lsof						install
+m4						install
+make						install
+makedev						install
+man-db						install
+manpages					install
+manpages-dev					install
+mawk						install
+md5deep						install
+memcached					install
+mercurial					install
+mercurial-common				install
+mesa-common-dev					install
+mime-support					install
+mingw32						install
+mingw32-binutils				install
+mingw32-runtime					install
+module-init-tools				install
+mongodb-10gen					install
+mount						install
+mountall					install
+mtools						install
+multiarch-support				install
+mysql-client					install
+mysql-client-5.5				install
+mysql-client-core-5.5				install
+mysql-common					install
+mysql-server					install
+mysql-server-5.5				install
+mysql-server-core-5.5				install
+ncurses-base					install
+ncurses-bin					install
+netbase						install
+netcat-openbsd					install
+netpbm						install
+notification-daemon				install
+ntfs-3g						install
+odbcinst					install
+odbcinst1debian2				install
+openjdk-6-jdk					install
+openjdk-6-jre					install
+openjdk-6-jre-headless				install
+openjdk-6-jre-lib				install
+openjdk-7-jdk					install
+openjdk-7-jre					install
+openjdk-7-jre-headless				install
+openssh-client					install
+openssh-server					install
+openssl						install
+oracle-java7-installer				install
+oracle-java8-installer				install
+passwd						install
+patch						install
+perl						install
+perl-base					install
+perl-modules					install
+pgdg-keyring					install
+pkg-config					install
+plymouth					install
+po-debconf					install
+policykit-1					install
+policykit-1-gnome				install
+postgresql-9.1					install
+postgresql-9.1-postgis-2.1			install
+postgresql-9.1-postgis-scripts			install
+postgresql-9.2					install
+postgresql-9.2-postgis-2.1			install
+postgresql-9.2-postgis-scripts			install
+postgresql-9.3					install
+postgresql-9.3-postgis-2.1			install
+postgresql-9.3-postgis-scripts			install
+postgresql-9.4					install
+postgresql-9.4-postgis-2.1			install
+postgresql-9.4-postgis-scripts			install
+postgresql-client				install
+postgresql-client-9.1				install
+postgresql-client-9.2				install
+postgresql-client-9.3				install
+postgresql-client-9.4				install
+postgresql-client-common			install
+postgresql-common				install
+postgresql-contrib-9.1				install
+postgresql-contrib-9.2				install
+postgresql-contrib-9.3				install
+postgresql-contrib-9.4				install
+powermgmt-base					install
+procps						install
+proj-bin					install
+proj-data					install
+psmisc						install
+python						install
+python-apt					install
+python-apt-common				install
+python-bzrlib					install
+python-configobj				install
+python-crypto					install
+python-dev					install
+python-gnupginterface				install
+python-httplib2					install
+python-keyring					install
+python-launchpadlib				install
+python-lazr.restfulclient			install
+python-lazr.uri					install
+python-minimal					install
+python-oauth					install
+python-paramiko					install
+python-pkg-resources				install
+python-pycurl					install
+python-simplejson				install
+python-software-properties			install
+python-wadllib					install
+python-zope.interface				install
+python2.7					install
+python2.7-dev					install
+python2.7-minimal				install
+qdbus						install
+qt4-linguist-tools				install
+qt4-qmake					install
+rabbitmq-server					install
+ragel						install
+readline-common					install
+redis-server					install
+riak						install
+rsync						install
+ruby						install
+ruby-mysql					install
+ruby1.8						install
+scons						install
+sed						install
+sensible-utils					install
+sgml-base					install
+shared-mime-info				install
+sound-theme-freedesktop				install
+sqlite3						install
+sqlite3-doc					install
+ssh						install
+ssh-import-id					install
+ssl-cert					install
+subversion					install
+sudo						install
+sysv-rc						install
+sysvinit-utils					install
+tar						install
+tcl8.5						install
+tcpd						install
+ttf-dejavu-core					install
+ttf-dejavu-extra				install
+tzdata						install
+tzdata-java					install
+ubuntu-keyring					install
+ucf						install
+udev						install
+udisks						install
+unattended-upgrades				install
+unzip						install
+upstart						install
+util-linux					install
+vim						install
+vim-common					install
+vim-runtime					install
+wamerican					install
+wget						install
+x11-common					install
+x11-utils					install
+x11-xkb-utils					install
+x11-xserver-utils				install
+x11proto-composite-dev				install
+x11proto-core-dev				install
+x11proto-damage-dev				install
+x11proto-fixes-dev				install
+x11proto-input-dev				install
+x11proto-kb-dev					install
+x11proto-randr-dev				install
+x11proto-render-dev				install
+x11proto-xext-dev				install
+x11proto-xinerama-dev				install
+xauth						install
+xdg-utils					install
+xfonts-base					install
+xfonts-encodings				install
+xfonts-utils					install
+xkb-data					install
+xml-core					install
+xorg-sgml-doctools				install
+xserver-common					install
+xserver-xorg-core				install
+xtrans-dev					install
+xvfb						install
+xz-lzma						install
+xz-utils					install
+zip						install
+zlib1g						install
+zlib1g-dev					install
+
+
+The command "dpkg --get-selections" exited with 0.
+
+Done. Your build exited with 0.
