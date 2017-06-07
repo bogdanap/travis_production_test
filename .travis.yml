@@ -19,6 +19,9 @@ matrix:
         - dist: trusty
           group: edge
           env: image="sudo trusty edge"
+        - dist: trusty
+          group: dev
+          env: image="sudo trusty dev"
         - dist: precise
           group: stable
           env: image="sudo precise stable"
