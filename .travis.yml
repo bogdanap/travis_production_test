@@ -1,11 +1,23 @@
 language: android
+dist: trusty
 
 android:
   components:
-    - build-tools-25
-    - android-16
-    - extra-google-google_play_services
+    - tools
+    - platform-tools
+    - tools
+    
+    - android-25
+    
+    - build-tools-25.0.2
+    - extra
     - extra-google-m2repository
+    - extra-android-m2repository
+    - extra-android-support
+
+jdk: oraclejdk8
+
+install: skip
 
 script:
-  ./gradlew build
+  - sdkmanager --list
