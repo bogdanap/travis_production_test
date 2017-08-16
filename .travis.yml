@@ -5,6 +5,7 @@ install: skip
 
 script:
   - which hg
+  - hg --version
   - pip freeze | grep -i mercurial
   - dpkg -l | grep -i mercurial
 
