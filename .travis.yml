@@ -12,12 +12,6 @@ script:
 matrix:
   include:
     - sudo: false
-      dist: precise
-      env: DIST=precise STACK=EC2
-    - sudo: required
-      dist: precise
-      env: DIST=precise STACK=GCE
-    - sudo: false
       dist: trusty
       env: DIST=trusty STACK=EC2
     - sudo: required
@@ -25,12 +19,12 @@ matrix:
       env: DIST=trusty STACK=GCE
     - sudo: false
       dist: trusty
-      group: edge
-      env: DIST=trusty STACK=EC2 GROUP=edge
+      group: dev
+      env: DIST=trusty STACK=EC2 GROUP=dev
     - sudo: required
       dist: trusty
-      group: edge
-      env: DIST=trusty STACK=GCE GROUP=edge
+      group: dev
+      env: DIST=trusty STACK=GCE GROUP=dev
 
 notifications:
   email: false
