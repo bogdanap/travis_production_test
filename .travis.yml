@@ -20,11 +20,11 @@ matrix:
     - sudo: false
       dist: trusty
       group: dev
-      env: DIST=trusty STACK=EC2 GROUP=edge
+      env: DIST=trusty STACK=EC2 GROUP=dev
     - sudo: required
       dist: trusty
       group: dev
-      env: DIST=trusty STACK=GCE GROUP=edge
+      env: DIST=trusty STACK=GCE GROUP=dev
 
 notifications:
   email: false
