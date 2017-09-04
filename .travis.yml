@@ -1,12 +1,8 @@
-language: python
-
 dist: trusty
 
 sudo: false
 
 services: 
   - cassandra
-  - memcached
-  - riak
 
-script: ls -la ~
+script: pgrep cassandra
