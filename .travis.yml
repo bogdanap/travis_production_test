@@ -2,6 +2,9 @@ dist: trusty
 
 sudo: false
 
+env:
+  - JAVA_TOOL_OPTIONS="-Xmx2048m -Xms512m"
+
 services: 
   - cassandra
 
