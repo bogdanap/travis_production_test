@@ -6,5 +6,7 @@ sudo: false
 
 services: 
   - cassandra
+  - memcached
+  - riak
 
 script: ls -la ~
