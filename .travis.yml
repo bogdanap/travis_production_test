@@ -8,4 +8,7 @@ env:
 services: 
   - cassandra
 
-script: pgrep cassandra
+script: 
+  - pgrep cassandra
+  - wget https://hublevelup.blackducksoftware.com/download/scan.cli.zip
+
