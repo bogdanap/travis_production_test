@@ -5,6 +5,9 @@ sudo: false
 env:
   - JAVA_TOOL_OPTIONS="-Xmx4G -Xms4G"
 
+before_install:
+    - echo -n | openssl s_client -connect hublevelup.blackducksoftware.com:443| sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-certificates.crt
+
 services: 
   - cassandra
 
