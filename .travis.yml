@@ -1,7 +1,6 @@
 dist: trusty
-language: ruby
 
-script: pip install --user jsmin
+script: pip install jsmin
 
 matrix:
   include:
