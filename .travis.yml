@@ -1,7 +1,21 @@
 dist: trusty
 language: python
 
-sudo: required
+script: pip install requests
 
-script: pip3 freeze
-
+matrix:
+  include:
+    - sudo: false
+      dist: trusty
+      env: STACK=EC2
+    - sudo: required
+      dist: trusty
+      env: STACK=GCE
+    - sudo: false
+      dist: trusty
+      group: deprecated-2017Q3
+      env: STACK=EC2 GROUP=deprecated
+    - sudo: required
+      dist: trusty
+      group: deprecated-2017Q3
+      env: STACK=GCE GROUP=deprecated
