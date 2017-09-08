@@ -1,6 +1,8 @@
 dist: trusty
 language: ruby
 
+before_install: source ~/virtualenv/python2.7/bin/activate
+
 script: pip install jsmin
 
 matrix:
