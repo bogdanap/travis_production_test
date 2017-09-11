@@ -1,20 +1,9 @@
 dist: trusty
+sudo: false
 
-script: pip install jsmin
+language: cpp
 
-matrix:
-  include:
-    - sudo: false
-      dist: trusty
-      env: STACK=EC2
-    - sudo: required
-      dist: trusty
-      env: STACK=GCE
-    - sudo: false
-      dist: trusty
-      group: deprecated-2017Q3
-      env: STACK=EC2 GROUP=deprecated
-    - sudo: required
-      dist: trusty
-      group: deprecated-2017Q3
-      env: STACK=GCE GROUP=deprecated
+before_install: pyenv global 2.7.13
+
+script: python --version
+
