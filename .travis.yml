@@ -15,7 +15,7 @@ install:
 
 script: 
   - pip freeze
-  - echo $PYTHONPATH
+  - which python
   
 matrix:
   include:
