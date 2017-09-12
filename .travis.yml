@@ -3,7 +3,6 @@ sudo: false
 language: python
 python: 3.6
 
-script: 
+install: 
   - pip install awscli
   - pip3 install jsmin
-
