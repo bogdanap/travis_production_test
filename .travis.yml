@@ -2,8 +2,9 @@ dist: trusty
 sudo: false
 
 language: cpp
+group: deprecated-2017Q3
 
-before_install: pyenv global 2.7.13
-
-script: python --version
+script: 
+  - pip install jsmin
+  - pip install --user rbtools
 
