@@ -6,7 +6,7 @@ install:
   - sudo add-apt-repository ppa:fkrull/deadsnakes -y
   - sudo apt-get update
   - sudo apt-get install python3.5 python3.5-dev python3-pip fakeroot
-  - virtualenv -p python3.5 /home/travis/realtime-virtualenv
+  - virtualenv -p python3.5 --system-site-packages /home/travis/realtime-virtualenv
   - source /home/travis/realtime-virtualenv/bin/activate
   - pip install --upgrade pip
   - pip install --upgrade wheel
