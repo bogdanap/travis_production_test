@@ -1,8 +1,22 @@
 dist: trusty
 sudo: required
-language: python
-python: 3.5
-virtualenv:
-  system_site_packages: true
+language: generic
 
-script: pip freeze
+install:
+  - sudo add-apt-repository ppa:fkrull/deadsnakes -y
+  - sudo apt-get update
+  - sudo apt-get install python3.5 python3.5-dev python3-pip fakeroot
+  - virtualenv -p python3.5 /home/travis/realtime-virtualenv
+  - source /home/travis/realtime-virtualenv/bin/activate
+  - pip install --upgrade pip
+  - pip install --upgrade wheel
+  - pip install --upgrade setuptools
+
+script: 
+  - pip freeze
+  - echo $PYTHONPATH
+  
+ matrix:
+  include:
+    - group: stable
+    - group: deprecated-2017Q3
