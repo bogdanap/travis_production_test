@@ -15,7 +15,7 @@ install:
 
 script: 
   - pip freeze
-  - which python
+  - python -c "import sys; print(sys.path)"
   
 matrix:
   include:
