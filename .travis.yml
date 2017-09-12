@@ -1,10 +1,13 @@
 dist: trusty
-sudo: false
-language: python
-before_install: pyenv global 3.5
+sudo: required
+language: generic
 
-install: 
-  - pip install awscli
-  - pip3 install jsmin
 
-script: echo 1
+script: echo $PYTHONPATH
+
+matrix:
+    include:
+     - group: stable
+       env: GROUP=stable
+     - group: deprecated-2017Q3
+       env: GROUP=deprecated
