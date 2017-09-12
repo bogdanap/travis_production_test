@@ -1,14 +1,15 @@
-language: php
-
-php:
-  - 5.5.28
-
 sudo: required
-services:
-  - docker
+group: dev
 
-install: true
-
+language: java
+jdk:
+  - ibmjava8
+  - ibmjava9
+  
 script:
-  - env | grep -i TMP
+  - jdk_switcher use ibmjava8
+  - java --version
+  - jdk_switcher use ibmjava9
+  - java --version
+
 
