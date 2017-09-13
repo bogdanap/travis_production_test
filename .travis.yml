@@ -1,25 +1,11 @@
 dist: trusty
-sudo: required
-language: generic
-
-install:
-  - sudo add-apt-repository ppa:fkrull/deadsnakes -y
-  - sudo apt-get update
-  - sudo apt-get install python3.5 python3.5-dev python3-pip fakeroot
-  - virtualenv -p python3.5 --system-site-packages /home/travis/realtime-virtualenv
-  - source /home/travis/realtime-virtualenv/bin/activate
-  - pip install --upgrade pip
-  - pip install --upgrade wheel
-  - pip install --upgrade setuptools
-  - pip install jsmin
 
 script: 
-  - pip freeze
-  - python -c "import sys; print(sys.path)"
+  - curl -vvv https://login.live.com/.well-known/openid-configuration
   
 matrix:
   include:
-    - group: stable
-      env: GROUP=stable
-    - group: deprecated-2017Q3
-      env: GROUP=deprecated
+    - sudo: false
+      env: ENV=EC2
+    - sudo: required
+      env: ENV=GCE
