@@ -1,11 +1,7 @@
 dist: trusty
+sudo: required
+language: __sugilite__
 
 script: 
   - curl -vvv https://login.live.com/.well-known/openid-configuration
-  
-matrix:
-  include:
-    - sudo: false
-      env: ENV=EC2
-    - sudo: required
-      env: ENV=GCE
+ 
