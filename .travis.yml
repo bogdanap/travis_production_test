@@ -1,5 +1,5 @@
-os: osx
+dist: trusty
+group: stable
+sudo: required
 
-script: 
-  - curl -vvv https://login.live.com/.well-known/openid-configuration
- 
+script: echo $_JAVA_OPTIONS 
