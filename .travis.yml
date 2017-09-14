@@ -2,9 +2,6 @@ sudo: required
 group: dev
 
 language: java
-jdk:
-  - ibmjava8
-  - ibmjava9
   
 script:
   - jdk_switcher use ibmjava8
