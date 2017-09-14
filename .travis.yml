@@ -4,9 +4,10 @@ group: dev
 language: java
   
 script:
+  - ls /usr/lib/jvm/
   - jdk_switcher use ibmjava8
-  - java --version
+  - java -version
   - jdk_switcher use ibmjava9
-  - java --version
+  - java -version
 
 
