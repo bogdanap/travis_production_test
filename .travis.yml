@@ -5,9 +5,15 @@ language: java
   
 script:
   - ls /usr/lib/jvm/
+  - df -h
   - jdk_switcher use ibmjava8
   - java -version
-  - jdk_switcher use ibmjava9
-  - java -version
+  
+matrix:
+  include:
+    - group: dev
+      env: GROUP=dev
+    - group: stable
+      env: GROUP=stable
 
 
