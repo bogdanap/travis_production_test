@@ -5,9 +5,11 @@ language: java
 script:
   - ls /usr/lib/jvm/
   - df -h
+  - echo $JAVA_HOME
   - java -version
   - jdk_switcher use ibmjava8
   - java -version
+  - echo $JAVA_HOME
   
 matrix:
   include:
