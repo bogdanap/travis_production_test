@@ -1,6 +1,7 @@
 language: ruby
 sudo: required
 install: skip
+rvm: jruby-head
 
 
 script:
