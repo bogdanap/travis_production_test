@@ -8,7 +8,7 @@ script:
 
 matrix:
   include:
-    - group:dev
+    - group: dev
       env: GROUP=dev
     - group: stable
       env: GROUP=stable
