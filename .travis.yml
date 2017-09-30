@@ -1,30 +1,14 @@
-language: python
-
+language: ruby
+sudo: required
 install: skip
 
 
 script:
-  - which hg
-  - hg --version
-  - pip freeze | grep -i mercurial
-  - dpkg -l | grep -i mercurial
+  - jruby
 
 matrix:
   include:
-    - sudo: false
-      dist: trusty
-      env: DIST=trusty STACK=EC2
-    - sudo: required
-      dist: trusty
-      env: DIST=trusty STACK=GCE
-    - sudo: false
-      dist: trusty
-      group: dev
-      env: DIST=trusty STACK=EC2 GROUP=dev
-    - sudo: required
-      dist: trusty
-      group: dev
-      env: DIST=trusty STACK=GCE GROUP=dev
-
-notifications:
-  email: false
+    - group:dev
+      env: GROUP=dev
+    - group: stable
+      env: GROUP=stable
