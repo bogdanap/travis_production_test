@@ -1,13 +1,13 @@
 sudo: required
-group: edge
+group: stable
 
 language: java
-jdk: ibmjava8
+jdk: openjdk7
 
 script:
   - echo $JAVA_HOME
   - java -version
-  - jdk_switcher use oraclejdk7
+  - jdk_switcher use oraclejdk8
   - java -version
   - echo $JAVA_HOME
 
