@@ -1,25 +1,12 @@
-language: cpp
-sudo: false
+
 dist: trusty
-
-addons:
-  sonarqube:
-    branches:
-    - jalazawaSonar
-    token:
-    secure: "444444"
-
-jdk:
-  - oraclejdk8
+services:
+  - postgresql
+  
+before_script:
+  - psql -U postgres -c "create extension postgis"
 
 script:
-  #    other script steps might be done before running the actual SonarQube analysis
-  - sonar-scanner
+  - dpkg -l | grep postgis
   
 
-cache:
-  directories:
-    - '$HOME/.sonar/cache'
-
-notifications:
-  email: true
