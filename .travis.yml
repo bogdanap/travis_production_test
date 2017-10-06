@@ -1,12 +1,10 @@
-
+sudo: required
 dist: trusty
 services:
   - postgresql
   
-before_script:
-  - psql -U postgres -c "create extension postgis"
 
 script:
   - dpkg -l | grep postgis
-  
+  - psql -U postgres -c "create extension postgis"
 
