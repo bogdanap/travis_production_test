@@ -2,4 +2,6 @@ dist: trusty
 group: stable
 sudo: required
 
-script: echo $_JAVA_OPTIONS 
+script:
+  - sudo apt-get update
+  - sudo apt-key list | grep expired
