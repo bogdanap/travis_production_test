@@ -5,3 +5,6 @@ sudo: required
 script:
   - sudo apt-get update
   - sudo apt-key list | grep expired
+  - apt-key adv --keyserver keys.gnupg.net --recv-keys EA312927
+  - sudo apt-get update
+  
