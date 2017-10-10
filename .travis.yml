@@ -1,21 +1,11 @@
 sudo: required
 group: stable
-
-language: java
+services:
+  - postgresql
 
 script:
-  - echo $JAVA_HOME
-  - which java
-  - java -version
-  - /usr/bin/java -version
-  - jdk_switcher use openjdk7
-  - echo $JAVA_HOME
-  - which java
-  - java -version
-  - /usr/bin/java -version
-  - echo $PATH
-  - export PATH=/usr/bin:$PATH
-  - which java
+  - psql --version
+  - pg_config --bindir
   
 
 
