@@ -1,9 +1,16 @@
 dist: trusty
-group: edge
 sudo: required
 language: java
-jdk: ibmjava8
 
 script:
   - java -version
   - echo $JAVA_HOME
+
+matrix:
+  include:
+    - group: edge
+      env: JAVA=ibmjava8
+      jdk: ibmjava8
+    - group: edge
+      env: JAVA=openjdk7
+      jdk: openjdk7
