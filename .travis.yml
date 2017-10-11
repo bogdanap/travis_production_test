@@ -1,10 +1,9 @@
 dist: trusty
-group: stable
+group: edge
 sudo: required
+language: java
+jdk: ibmjava8
 
 script:
-  - sudo apt-get update
-  - sudo apt-key list | grep expired
-  - apt-key adv --keyserver keys.gnupg.net --recv-keys EA312927
-  - sudo apt-get update
-  - mongo -version
+  - java -version
+  - echo $JAVA_HOME
