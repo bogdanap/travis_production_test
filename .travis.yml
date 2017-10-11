@@ -1,11 +1,17 @@
-sudo: required
 group: stable
 services:
   - postgresql
 
 script:
-  - psql --version
-  - pg_config --bindir
+  - dpkg -l | grep postgis
+  - psql -U postgres -c "create extension postgis"
+  
+matrix:
+  include:
+    - os: linux
+      sudo: false
+    - os: linux
+      sudo: required
   
 
 
