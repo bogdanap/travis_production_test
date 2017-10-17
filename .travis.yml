@@ -1,16 +1,13 @@
 dist: trusty
 sudo: required
-language: java
+language:__garnet__
 
 script:
-  - java -version
-  - echo $JAVA_HOME
+  - mongo --version
 
 matrix:
   include:
-    - group: edge
-      env: JAVA=ibmjava8
-      jdk: ibmjava8
-    - group: edge
-      env: JAVA=openjdk7
-      jdk: openjdk7
+    - group: dev
+      env: GROUP=dev
+    - group: stable
+      env: GROUP=stable
