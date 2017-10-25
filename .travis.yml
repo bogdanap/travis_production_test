@@ -4,4 +4,4 @@ services:
   - docker
   
 script:
-  - docker pull ubuntu
+  - docker pull travisci/ci-amethyst:packer-1508250117-29cd77f
