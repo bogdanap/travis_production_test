@@ -1,7 +1,7 @@
 dist: trusty
 sudo: required
 services:
-  -docker
+  - docker
   
 script:
-  -docker pull ubuntu
+  - docker pull ubuntu
