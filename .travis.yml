@@ -1,7 +1,7 @@
 dist: trusty
-sudo: required
-services:
-  - docker
+sudo: false
+language: java
+jdk: openjdk7
   
 script:
-  - docker pull travisci/ci-amethyst:packer-1508250117-29cd77f
+  - echo $JAVA_HOME
