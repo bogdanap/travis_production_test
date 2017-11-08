@@ -1,7 +1,8 @@
 dist: trusty
-sudo: false
-language: java
-jdk: openjdk7
+sudo: required
+
+services:
+  - rabbitmq
   
 script:
-  - echo $JAVA_HOME
+  - sudo service rabbitmq-server status
