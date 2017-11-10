@@ -1,9 +1,6 @@
 dist: trusty
 sudo: required
 group: stable
-
-services:
-  - locale -a
   
 script:
-  - sudo service rabbitmq-server status
+  - locale -a
