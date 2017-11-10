@@ -1,6 +1,6 @@
 dist: trusty
 sudo: required
-group: stable
+group: dev
   
 script:
-  - locale -a
+  - phantomjs -v
