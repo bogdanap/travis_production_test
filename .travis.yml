@@ -7,7 +7,7 @@ addons:
 install: skip
 
 script:
-  - ls
+  - firefox
   
 matrix:
   include:
