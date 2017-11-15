@@ -1,11 +1,13 @@
 dist: trusty
 sudo: required
-language: clojure
+language: java
+addons:
+  - firefox
 
 install: skip
 
 script:
-  - lein --version
+  - ls
   
 matrix:
   include:
