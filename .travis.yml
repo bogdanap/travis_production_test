@@ -1,19 +1,12 @@
 dist: trusty
 sudo: required
-language: java
-addons:
-  - firefox
-  
-before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - sleep 3
+language: php
+php: 7.1
 
 install: skip
 
 script:
-  - firefox --version
-  - firefox
+  - php --version
   
 matrix:
   include:
