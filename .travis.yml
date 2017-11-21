@@ -1,16 +1,17 @@
 dist: trusty
 sudo: required
-language: php
-php: 7.0
+language: python
 
 install: skip
 
 script:
-  - php --version
-  - cat /etc/hosts
+  - pyenv versions
+  - python --version
   
 matrix:
   include:
-    - group: stable
-    - group: dev
+    - python: 2.7
+    - python: 2.7.13
+    - python: 3.5
+    - python: 3.6
   
