@@ -6,12 +6,11 @@ group: dev
 install: skip
 
 script:
-  - pyenv versions
   - python --version
+  - pip freeze
   
 matrix:
   include:
     - python: 2.7
-    - python: 3.5
     - python: 3.6
   
