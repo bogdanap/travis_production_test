@@ -1,6 +1,7 @@
 dist: trusty
 sudo: required
-language: java
+language: python
+group: dev
 
 install: skip
 
@@ -10,6 +11,7 @@ script:
   
 matrix:
   include:
-    - group: stable
-    - group: dev
+    - python: 2.7
+    - python: 3.5
+    - python: 3.6
   
