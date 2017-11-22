@@ -2,7 +2,7 @@ dist: trusty
 sudo: required
 language: python
 virtualenv:
-  system_site_packages: false
+  system_site_packages: true
 group: dev
 
 install: skip
