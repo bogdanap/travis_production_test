@@ -1,18 +1,19 @@
 dist: trusty
 sudo: required
-language: python
-virtualenv:
-  system_site_packages: true
+language: java
+#virtualenv:
+#  system_site_packages: false
 group: dev
 
 install: skip
 
 script:
   - python --version
+  - python3 --version
   - pip freeze
   
-matrix:
-  include:
-    - python: 2.7
-    - python: 3.6
+#matrix:
+#  include:
+#    - python: 2.7
+#    - python: 3.6
   
