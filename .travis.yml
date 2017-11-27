@@ -1,19 +1,16 @@
 dist: trusty
 sudo: required
-language: minimal
-#virtualenv:
-#  system_site_packages: true
-group: dev
+language: ruby
+#group: dev
+services: redis
 
 install: skip
 
 script:
-  - gcloud --version
-  - gcloud components update
-  - gcloud --version
+  - sudo service redis-server status
   
-#matrix:
-#  include:
-#    - python: pypy
-#    - python: pypy3
+matrix:
+  include:
+    - group: stable
+    - group: dev
   
