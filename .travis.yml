@@ -7,10 +7,10 @@ services: redis
 install: skip
 
 script:
-  - sudo service redis-server status
+  - service redis-server status
   
-matrix:
-  include:
-    - group: stable
-    - group: dev
+#matrix:
+#  include:
+#    - group: stable
+ #   - group: dev
   
