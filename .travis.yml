@@ -2,19 +2,19 @@ dist: trusty
 sudo: false
 language: python
 #group: dev
-python: 2.7
+python: 3.4
 virtualenv:
   system_site_packages: true
 
 addons:
   apt:
     packages:
-      - python-lxml
+      - python3-gi
 
 install: skip
 
 script:
-  - python -c "import lxml;print lxml.__file__"
+  - python -c "import gi"
   
 #matrix:
 #  include:
