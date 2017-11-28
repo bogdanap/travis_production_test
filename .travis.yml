@@ -1,13 +1,20 @@
 dist: trusty
 sudo: false
-language: ruby
+language: python
 #group: dev
-services: redis
+python: 2.7
+virtualenv:
+  system_site_packages: true
+
+addons:
+  apt:
+    packages:
+      - python-lxml
 
 install: skip
 
 script:
-  - service redis-server status
+  - python -c "import lxml;print lxml.__file__"
   
 #matrix:
 #  include:
