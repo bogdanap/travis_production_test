@@ -1,21 +1,11 @@
 dist: trusty
-sudo: false
-language: python
-#group: dev
-python: 3.4
-virtualenv:
-  system_site_packages: true
-
-addons:
-  apt:
-    packages:
-      - python3-gi
+sudo: required
+language: node_js
 
 install: skip
 
 script:
-  - python -c "import gi"
-  
+  - nvm --version
 #matrix:
 #  include:
 #    - group: stable
