@@ -1,6 +1,6 @@
 dist: trusty
 sudo: required
-language: generic
+language: __garnet__
 
 install: skip
 
