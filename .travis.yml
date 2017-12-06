@@ -10,5 +10,5 @@ script
 matrix:
   include:
     - group: stable
-    - group: dev
+    - group: edge
   
