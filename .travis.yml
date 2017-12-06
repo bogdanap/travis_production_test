@@ -4,11 +4,8 @@ language: generic
 
 install: skip
 
-script:
-  - yarn --version
-  - nvm --version
-  - gimme --version
-  - rabbitmq-server --version
+script
+  - sudo rabbitmq-server --version
 
 matrix:
   include:
