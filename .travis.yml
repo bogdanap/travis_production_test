@@ -1,11 +1,13 @@
 dist: trusty
-sudo: false
-language: node_js
+sudo: required
+language: generic
+group: edge
 
 install: skip
 
 script:
-  - nvm --version
+  - apt-cache policy dpkg
+
 #matrix:
 #  include:
 #    - group: stable
