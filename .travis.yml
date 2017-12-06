@@ -1,15 +1,17 @@
 dist: trusty
 sudo: required
 language: generic
-group: edge
 
 install: skip
 
 script:
-  - apt-cache policy dpkg
+  - yarn --version
+  - nvm --version
+  - gimme --version
+  - rabbitmq-server --version
 
-#matrix:
-#  include:
-#    - group: stable
- #   - group: dev
+matrix:
+  include:
+    - group: stable
+    - group: dev
   
