@@ -1,16 +1,14 @@
 dist: trusty
 sudo: required
-language: __garnet__
+language: generic
 
 install: skip
 
 script:
-  - nvm --version
-  - yarn --version
-  - sudo rabbitmq-server --version
+  - echo "Hello!"
 
 matrix:
   include:
-    - group: stable
-    - group: edge
+    - GROUP=stable; group: stable
+    - GROUP=dev; group: dev
   
