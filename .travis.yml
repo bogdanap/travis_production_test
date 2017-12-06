@@ -9,6 +9,6 @@ script:
 
 matrix:
   include:
-    - GROUP=stable; group: stable
-    - GROUP=dev; group: dev
+    - group: stable
+    - group: dev
   
