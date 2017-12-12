@@ -1,15 +1,15 @@
 dist: trusty
-sudo: required
-group: edge
+sudo: false
 install: skip
+language: generic
 
 script:
   - echo "Hello!"
   - nvm --version
 
-matrix:
-  include:
-    - language: __amethyst__
-    - language: __garnet__
-    - language: __connie__
+#matrix:
+# include:
+#    - language: __amethyst__
+#    - language: __garnet__
+#    - language: __connie__
   
