@@ -1,14 +1,15 @@
 dist: trusty
 sudo: required
-language: __connie__
-
+group: edge
 install: skip
 
 script:
   - echo "Hello!"
+  - nvm --version
 
 matrix:
   include:
-    - group: stable
-    - group: dev
+    - language: __amethyst__
+    - language: __garnet__
+    - language: __connie__
   
