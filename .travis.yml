@@ -1,15 +1,14 @@
 dist: trusty
-sudo: false
+sudo: required
 install: skip
-language: generic
+language: __garnet__
 
 script:
   - echo "Hello!"
-  - nvm --version
+  - bower --version
 
-#matrix:
-# include:
-#    - language: __amethyst__
-#    - language: __garnet__
-#    - language: __connie__
+matrix:
+ include:
+    - group: stable
+    - group: deprecated-2017Q4
   
