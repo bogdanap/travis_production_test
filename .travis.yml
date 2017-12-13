@@ -1,11 +1,11 @@
 dist: trusty
 sudo: required
 install: skip
-language: generic
+language: cpp
 
 script:
-  - mvn --version
-  - sudo mvn --version
+  - cmake --version
+  - sudo cmake --version
 
 matrix:
  include:
