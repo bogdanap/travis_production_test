@@ -5,7 +5,7 @@ language: cpp
 
 script:
   - cmake --version
-  - sudo cmake --version
+  - sudo env "PATH=$PATH" cmake --version
 
 matrix:
  include:
