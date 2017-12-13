@@ -1,11 +1,11 @@
 dist: trusty
 sudo: required
 install: skip
-language: __garnet__
+language: generic
 
 script:
-  - echo "Hello!"
-  - bower --version
+  - mvn --version
+  - sudo mvn --version
 
 matrix:
  include:
