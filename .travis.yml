@@ -4,8 +4,8 @@ install: skip
 language: generic
 
 script:
-  - xvfb-run
-  - xvfb --version
+  - sh -e /etc/init.d/xvfb start
+  - xvfb-run --version
 
 matrix:
  include:
