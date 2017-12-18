@@ -5,7 +5,10 @@ language: generic
 
 script:
   - sh -e /etc/init.d/xvfb start
-  - xvfb-run --version
+  - sh -e /etc/init.d/xvfb status
+  - sh -e /etc/init.d/xvfb stop
+  - sh -e /etc/init.d/xvfb status
+  
 
 matrix:
  include:
