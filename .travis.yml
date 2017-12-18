@@ -1,11 +1,11 @@
 dist: trusty
 sudo: required
 install: skip
-language: cpp
+language: generic
 
 script:
-  - cmake --version
-  - sudo env "PATH=$PATH" cmake --version
+  - xvfb-run
+  - xvfb --version
 
 matrix:
  include:
