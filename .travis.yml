@@ -1,14 +1,11 @@
 dist: trusty
 sudo: required
 install: skip
-language: generic
+language: python
+python: 3.6
 
 script:
-  - sh -e /etc/init.d/xvfb start
-  - sh -e /etc/init.d/xvfb status
-  - sh -e /etc/init.d/xvfb stop
-  - sh -e /etc/init.d/xvfb status
-  
+  - df -h
 
 matrix:
  include:
