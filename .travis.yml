@@ -1,5 +1,5 @@
 dist: trusty
-sudo: required
+sudo: false
 install: skip
 language: python
 python: 3.6
@@ -7,8 +7,8 @@ python: 3.6
 script:
   - df -h
 
-matrix:
- include:
-    - group: stable
-    - group: deprecated-2017Q4
+#matrix:
+# include:
+#    - group: stable
+#    - group: deprecated-2017Q4
   
