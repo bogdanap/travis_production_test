@@ -1,11 +1,10 @@
-dist: trusty
-sudo: false
+dist: precise
+sudo: required
 install: skip
-language: python
-python: 3.6
+language: ruby
 
 script:
-  - df -h
+  - echo "Hello"
 
 #matrix:
 # include:
