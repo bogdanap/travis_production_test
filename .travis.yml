@@ -2,6 +2,7 @@ dist: precise
 sudo: required
 install: skip
 language: ruby
+group: edge
 
 script:
   - echo "Hello"
