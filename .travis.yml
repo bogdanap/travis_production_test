@@ -1,14 +1,13 @@
 dist: precise
 sudo: required
 install: skip
-language: ruby
-group: edge
+language: python
 
 script:
   - echo "Hello"
 
-#matrix:
-# include:
-#    - group: stable
-#    - group: deprecated-2017Q4
+matrix:
+ include:
+    - group: stable
+    - group: edge
   
