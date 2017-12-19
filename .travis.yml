@@ -1,7 +1,7 @@
 dist: precise
 sudo: required
 install: skip
-language: python
+language: cpp
 
 script:
   - echo "Hello"
