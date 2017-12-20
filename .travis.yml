@@ -10,4 +10,5 @@ matrix:
  include:
     - group: stable
     - group: edge
+    - group: dev
   
