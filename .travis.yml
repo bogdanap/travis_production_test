@@ -1,7 +1,7 @@
 dist: precise
 sudo: required
 install: skip
-language: nodejs
+language: perl
 group: stable
 
 script:
