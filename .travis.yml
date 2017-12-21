@@ -1,7 +1,7 @@
 dist: precise
 sudo: required
 install: skip
-language: perl
+language: go
 group: stable
 
 script:
