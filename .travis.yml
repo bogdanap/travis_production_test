@@ -1,14 +1,15 @@
 dist: precise
 sudo: required
 install: skip
-language: cpp
+language: ruby
+group: edge
 
 script:
   - echo "Hello"
 
-matrix:
- include:
-    - group: stable
-    - group: edge
-    - group: dev
+#matrix:
+# include:
+#    - group: stable
+#    - group: edge
+#    - group: dev
   
