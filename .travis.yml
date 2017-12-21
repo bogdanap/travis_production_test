@@ -1,7 +1,7 @@
 dist: precise
 sudo: required
 install: skip
-language: go
+language: haskell
 group: stable
 
 script:
