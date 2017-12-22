@@ -1,7 +1,7 @@
 dist: xenial
 sudo: required
 install: skip
-language: python
+language: minimal
 group: stable
 
 script:
