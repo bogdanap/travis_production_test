@@ -1,7 +1,7 @@
-dist: precise
+dist: xenial
 sudo: required
 install: skip
-language: erlang
+language: python
 group: stable
 
 script:
