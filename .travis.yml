@@ -1,4 +1,4 @@
-dist: osx
+os: osx
 #sudo: required
 install: skip
 #language: minimal
