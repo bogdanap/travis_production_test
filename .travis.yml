@@ -1,15 +1,32 @@
-os: osx
-#sudo: required
-install: skip
-#language: minimal
-group: stable
-
-script:
-  - echo "Hello"
-
-#matrix:
-# include:
-#    - group: stable
-#    - group: edge
-#    - group: dev
-  
+language: node_js
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - g++-4.8
+sudo: required
+matrix:
+    include:
+        - env: image=precise run=1
+          dist: precise
+        - env: image=trusty run=1
+          dist: trusty
+        - env: image=precise run=2
+          dist: precise
+        - env: image=trusty run=2
+          dist: trusty
+        - env: image=precise run=3
+          dist: precise
+        - env: image=trusty run=3
+          dist: trusty
+        - env: image=precise run=4
+          dist: precise
+        - env: image=trusty run=4
+          dist: trusty
+script: 
+  - curl -sL http://ppa.launchpad.net/chris-lea/redis-server/ubuntu/dists/precise/InRelease
+  - sleep 300
+install: true
+notifications:
+    email: never
