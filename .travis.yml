@@ -2,6 +2,7 @@ os: linux
 dist: xenial
 group: edge
 sudo: required
+language: csharp
     
 install: skip
 
