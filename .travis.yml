@@ -1,7 +1,6 @@
 os: linux
 dist: xenial
 group: edge
-language: minimal
     
 install: skip
 
