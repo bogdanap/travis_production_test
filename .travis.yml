@@ -1,6 +1,7 @@
 os: linux
 dist: xenial
 group: edge
+sudo: required
     
 install: skip
 
