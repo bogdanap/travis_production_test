@@ -5,9 +5,18 @@ language: ruby
     
 install: skip
 
-script: cat /var/log/messages
-
 matrix:
   include:
-    - sudo: false
-    - sudo: required
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
+    - script: sudo apt-get update
