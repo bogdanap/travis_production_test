@@ -1,9 +1,13 @@
 os: linux
-dist: xenial
-group: edge
-sudo: required
-language: __stevonnie__
+dist: trusty
+group: stable
+language: ruby
     
 install: skip
 
-script: dpkg -l | grep -i sshguard
+script: cat /var/log/messages
+
+matrix:
+  include:
+    - sudo: false
+    - sudo: required
