@@ -7,16 +7,39 @@ install: skip
 
 matrix:
   include:
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
-    - script: sudo apt-get update
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
+    - script: 
+        - sudo apt-get update
+        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
