@@ -7,3 +7,4 @@ install: skip
 
 script:
     - echo $TRAVIS_COMMIT_RANGE
+    - echo $TRAVIS_TAG
