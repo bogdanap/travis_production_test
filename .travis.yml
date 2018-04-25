@@ -5,51 +5,5 @@ language: ruby
     
 install: skip
 
-matrix:
-  include:
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-    - script: 
-        - wget http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg
-        - sudo apt-get update
-      
+script:
+    - echo $TRAVIS_COMMIT_RANGE
