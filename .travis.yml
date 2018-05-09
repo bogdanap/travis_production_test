@@ -5,6 +5,7 @@ language: ruby
     
 install: skip
 
-script:
-    - echo $TRAVIS_COMMIT_RANGE
-    - echo $TRAVIS_TAG
+matrix:
+  include:
+    - script: wget --recursive http://archive.ubuntu.com/ubuntu/
+    - script: wget --recursive http://nl.archive.ubuntu.com/ubuntu/
