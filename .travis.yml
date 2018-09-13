@@ -2,10 +2,8 @@ os: linux
 dist: trusty
 group: stable
 language: ruby
+trace: true
     
 install: skip
 
-matrix:
-  include:
-    - script: wget --recursive http://archive.ubuntu.com/ubuntu/
-    - script: wget --recursive http://nl.archive.ubuntu.com/ubuntu/
+script: echo "Hi!"
