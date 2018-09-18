@@ -2,6 +2,7 @@ os: linux
 dist: trusty
 group: stable
 language: ruby
+sudo: required
 trace: true
     
 install: skip
