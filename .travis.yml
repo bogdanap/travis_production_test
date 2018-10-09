@@ -7,4 +7,8 @@ trace: true
     
 install: skip
 
-script: echo "Hi!"
+script:
+    - sudo apt-get update
+    - sudo apt-get install -yq ghostscript
+    - wget https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs925/ghostscript-9.25-linux-x86_64.tgz
+    - wget http://us-central1.gce.archive.ubuntu.com/ubuntu/dists/trusty/Release.gpg
