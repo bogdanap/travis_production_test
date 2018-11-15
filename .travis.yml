@@ -1,10 +1,12 @@
 os: linux
 dist: trusty
 group: stable
-language: ruby
+language: python
+python: 3.5
 sudo: required
     
 install: skip
 
 script:
-    - env
+    - gpg --version
+    - gpg --keyserver hkp://pool.sks-keyservers.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
