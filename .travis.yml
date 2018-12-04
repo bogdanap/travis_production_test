@@ -1,10 +1,8 @@
 os: linux
 dist: trusty
 group: stable
-language: bash
 sudo: required
     
 install: skip
 
-script:
-    - echo 'Hi'
+script: ls
